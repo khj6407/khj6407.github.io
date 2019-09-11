@@ -1,100 +1,102 @@
 @charset="utf-8";
-		* {
-			margin: 0;
-			padding: 0;
-		}
 
-		body,
-		html {
-			width: 100%;
-			overflow-x: hidden;
-		}
+* {
+	margin: 0;
+	padding: 0;
+}
 
-		a {
-			text-decoration: none;
-		}
+body,
+html {
+	width: 100%;
+	overflow-x: hidden;
+}
 
-		ul {
-			list-style: none;
-		}
+a {
+	text-decoration: none;
+}
 
-		/*		해더영역설정*/
-		.wrap {
-			clear: both;
-			width: 100%;
-		}
+ul {
+	list-style: none;
+}
 
-		.hd {
-			width: 100%;
-			height: 140px;
-			background-color: white;
-			overflow: hidden;
-			border-bottom: 3px solid #333;
-		}
+/*		해더영역설정*/
+.wrap {
+	clear: both;
+	width: 100%;
+}
 
-		.logo {
-			display: block;
-			width: 120px;
-			height: 50px;
-			position: absolute;
-			top: 30px;
-			left: 150px;
-		}
+.hd {
+	width: 100%;
+	height: 140px;
+	background-color: white;
+	overflow: hidden;
+	border-bottom: 3px solid #333;
+}
 
-		#tnb {
-			float: right;
-			margin-right: 150px;
-		}
+.logo {
+	display: block;
+	width: 120px;
+	height: 50px;
+	position: absolute;
+	top: 30px;
+	left: 150px;
+}
 
-		#gnb {
-			clear: both;
-			float: right;
-			margin-left: 150px;
-		}
+#tnb {
+	float: right;
+	margin-right: 150px;
+}
 
-		.menu {
-			clear: both;
-			margin-top: 15px;
-		}
+#gnb {
+	clear: both;
+	float: right;
+	margin-left: 150px;
+}
 
-		.menu li {
-			float: left;
-			padding: 10px;
-		}
+.menu {
+	clear: both;
+	margin-top: 15px;
+}
 
-		.menu li a {
-			color: #333;
-			font-size: 14px;
-			font-weight: bold;
-		}
+.menu li {
+	float: left;
+	padding: 10px;
+}
 
-		.menu li a:hover {
-			color: deeppink;
-		}
+.menu li a {
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+}
 
-		#gnb .menu li {
-			padding: 15px;
-			padding-left: 30px;
-		}
+.menu li a:hover {
+	color: deeppink;
+}
 
-		#gnb .menu li a {
-			font-size: 18px;
-		}
+#gnb .menu li {
+	padding: 15px;
+	padding-left: 30px;
+}
 
-		.ft {
-			clear: both;
-			width: 100%;
-			height: 120px;
-			line-height: 60px;
-			background-color: #644d4d;
-		}
+#gnb .menu li a {
+	font-size: 18px;
+}
 
-		.addr {
-			padding-left: 120px;
-			color: #ccc;
-		}
+/*		푸터영역 설정*/
+.ft {
+	clear: both;
+	width: 100%;
+	height: 120px;
+	line-height: 60px;
+	background-color: #644d4d;
+}
 
-		.copyright {
-			padding-left: 120px;
-			color: #fff;
-		}
+.addr {
+	padding-left: 120px;
+	color: #ccc;
+}
+
+.copyright {
+	padding-left: 120px;
+	color: #fff;
+}
