@@ -16,7 +16,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./picture/logo180X180.png">
     <link rel="shortcut icon" type="image/png" sizes="180x180" href="./picture/logo180X180.png">
     <link rel="stylesheet" href="common.css">
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <style>
 		*{margin: 0px; padding: 0; }
 		body, html{ font-family: sans-serif;}
@@ -27,7 +28,7 @@
 		.blogo{display: block; width: 148px; height: 40px; background-image: url("./icon/25.png"); margin: 2px; margin-left: 450px; float: left; }
 		.top{ float: right; margin-right:350px;}
 		.top li{ float: left; }
-		.top li a{color: white; display: block;margin-right: 20px; line-height: 50px; }
+		.top li a{color: white; display: block; margin-right: 20px; line-height: 50px; font-size: 14px;}
 		.hdm_wrap{ width: 100%; height: 70px;  z-index: 10; }
 		.logo{display: block; float: left; z-index: 0; margin-left: 450px; width: 135px; height: 35px; background-image: url("./icon/hae.png"); }
 		#mainmenu {float: left; margin-left: 20px; margin-top: 5px; width: 1000px; z-index: 100; }
@@ -37,9 +38,9 @@
 		#mainmenu li a{display: block;  line-height: 40px; color: black; font-weight: bold;}	
 		#mainmenu li .sub a{text-align: left; font-size: 15px; text-indent: 22px; color: #623300; }
 		#mainmenu li a:hover {color: #623300;}	
-		#mainmenu li:hover .sub{ width: 130px; height: 170px; background: rgba(255, 255, 255, 0.54);}
-		#mainmenu li.m3:hover .sub{ width: 125px; height: 40px; background: rgba(255, 255, 255, 0.54);}
-		#mainmenu li.m4:hover .sub{ width: 125px; height: 80px; background: rgba(255, 255, 255, 0.54);}
+		#mainmenu li:hover .sub{ width: 130px; height: 170px; background: #f8d39271;}
+		#mainmenu li.m3:hover .sub{ width: 125px; height: 40px; background: #f8d39271;}
+		#mainmenu li.m4:hover .sub{ width: 125px; height: 80px; background: #f8d39271;}
 		#mainmenu li:before{ content: ""; display: block; width: 180px; height: 0px; left: 0; overflow: hidden; position: absolute; top: 60px; z-index: 0;  border-bottom: 3px solid transparent; transition: 0.5s;}
 		#mainmenu:hover::before{height: 240px; border-bottom: 3px solid #333;}
 		#mainmenu .sub a:hover{ color: #000;}
@@ -64,20 +65,28 @@
         .btn_box label { display: block; background-color: #fff; width: 15px; height: 15px; float: left; border-radius: 10px; margin-left: 40px; cursor: pointer;}
         .rad {display: none;}
         #ra1:checked ~ .img_box .banner1 { margin-top: 0;}
-        #ra2:checked ~ .img_box .banner2 { height: 100%; margin-top: -31.25%;}
-        #ra3:checked ~ .img_box .banner3 { height: 100%; margin-top: -62.5%;}
+        #ra2:checked ~ .img_box .banner2 { height: auto; margin-top: -31.25%;}
+        #ra3:checked ~ .img_box .banner3 { height: auto; margin-top: -62.5%;}
         #ra1:checked ~ .btn_box .btn1 { background: linear-gradient(to right, #f26c23, #fec226 ); width: 30px;}
         #ra2:checked ~ .btn_box .btn2 { background: linear-gradient(to right, #f26c23, #fec226 ); width: 30px;}
         #ra3:checked ~ .btn_box .btn3 { background: linear-gradient(to right, #f26c23, #fec226 ); width: 30px;}
-		.vs_box{ position: absolute; z-index: 10; top: 360px; left: 530px;}
-		.san_box{position: absolute; width: 100%; height: 100%; z-index: 11;}
+		.vs_box{ position: absolute;  top: 400px; left: 530px;}
+		.san_box{position: absolute; width: 100%; height: 100%; }
 		@keyframes float{
 			0%{transform: translateY(-100px);}
 			50%{transform: translateY(-110px);}
 			100%{transform: translateY(-100px);}
 		}
-		.sand{ display: block; width: 50px; height: 50px; background-image: url("icon/Untitled-2.png"); background-repeat: no-repeat; background-position: 0 bottom ; animation: float 1s linear infinite forwards;}
+		.sand{ display: block; width: 50px; height: 50px; padding-top:37px; padding-left: 5px; background-image: url("icon/Untitled-2.png"); background-repeat: no-repeat;  animation: float 1s linear infinite forwards;}
 		.tit_box h2{ display: block; width: 450px; height: 200px; background-image: url("picture/title.png");}
+		.service{ position: absolute; top:-120px; left: 70%; width: 100px; height: auto; margin-left: 380px; z-index: 30;}
+		.icon_box li{width: 100px; height: 100px; margin-bottom: 20px;}
+		.ico_fr1, .ico_fr2, .ico_fr3{display: block; width: 100%; height: 100%; border-radius: 50px; text-align:center; font-weight: bold; color: white; font-size: 15px; background-color:#623300d2; }
+		.ico_fr1:hover { background-color: #f8d3928c; color: #623300;}
+		.ico_fr2:hover { background-color: #f8d3928c; color: #623300;}
+		.ico_fr3:hover { background-color: #f8d3928c; color: #623300;}
+		.icon_box .ico_fr1 span, .icon_box .ico_fr2 span, .icon_box .ico_fr3 span{display: block; letter-spacing: -0.08em; line-height: 1.2;}
+		.ico_fr1 i, .ico_fr2 i, .ico_fr3 i{display: inline-block; font-size: 38px;  margin-top: 12px; margin-bottom: 4px; color: white; }
 		.box{  width: 1500px; height: 600px; margin: -80px auto; }
 		.col_box, .col_box1{ display: block; float: left; }
 		.col_box { width: 400px; height: 600px; float: left; margin-left: 180px; }
@@ -181,16 +190,34 @@
 			<div class="vs_box">
 				<div class="tit_box">
 					<div class="san_box">
-						<div class="sand"></div>
-					</div>
+						<div class="sand">
 					<h2 class="vs_tit"></h2>
+					</div>
+				</div>
 					<p class="vs_com">5. 24(금) ~ 5. 27(월)까지 해운대 해수욕장에서 만나요! ※ 모래조각전 전시 6.9.(일)까지 </p>
 				</div>
+				<section class="service">
 				<ul class="icon_box">
-					<li class="ico_fr"><a href="">리플렛다운받기</a></li>
-					<li class="ico_fr"><a href="">프로그램 찾기</a></li>
-					<li class="ico_fr"><a href="">프로그램 예약</a></li>
+					<li >
+						<a href="" class="ico_fr1">
+							<i class="fas fa-file-download"></i>
+							<span>리플렛<br>다운받기</span>
+						</a>
+					</li>
+					<li>
+						<a href="" class=" ico_fr2">
+							<i class="fas fa-file-export"></i>
+							<span>프로그램<br>찾기</span>
+						</a>
+					</li>
+					<li>
+						<a href="" class="ico_fr3">
+							<i class="fas fa-paper-plane"></i>								
+							<span>프로그램<br>예약</span>
+						</a>
+					</li>
 				</ul>
+				</section>
 			</div>
 		</main>
 		<div class="box">
