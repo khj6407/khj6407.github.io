@@ -24,37 +24,52 @@
 		ul{list-style: none;}
 		.hd{ width: 100%; height: 100%; background-image: url("./picture/hd_bg.jpg"); }
 		.hd_wrap{width: 1903px; position: relative; margin: 0 auto; height: 80px; }
-		.blogo{display: block; width: 148px; height: 40px; background-image: url("./icon/25.png"); margin: 2px; margin-left: 350px; float: left; }
+		.blogo{display: block; width: 148px; height: 40px; background-image: url("./icon/25.png"); margin: 2px; margin-left: 450px; float: left; }
 		.top{ float: right; margin-right:350px;}
 		.top li{ float: left; }
-		.top li a{color: white; display: block; line-height: 50px; }
-		.logo{display: block; float: left; margin-left: 350px; width: 135px; height: 35px; background-image: url("./icon/hae.png")}
-		#mainmenu {float: left; margin-left: 70px; margin-top: 10px; width: 800px;}
+		.top li a{color: white; display: block;margin-right: 20px; line-height: 50px; }
+		.hdm_wrap{ width: 100%; height: 70px;  z-index: 10; }
+		.logo{display: block; float: left; z-index: 0; margin-left: 450px; width: 135px; height: 35px; background-image: url("./icon/hae.png"); }
+		#mainmenu {float: left; margin-left: 20px; margin-top: 5px; width: 1000px; z-index: 100; }
 		#mainmenu li{float: left; width: 130px;  position: relative; font-size: 18px;}
-		#mainmenu li a{display: block;  line-height: 40px; color: black;}
 		#mainmenu li .sub li{clear: both; }
-		#mainmenu li .sub a{text-align: left; font-size: 15px; text-indent: 30px;}
-		.sub{overflow: hidden; width: 240px; height: 0; position: absolute; left: 0; top: 50px; transition: 0.5s; }
-		#mainmenu:hover .sub{display: block;}
-		#mainmenu li a.dp1{font-size: 16px;}
-		#mainmenu li a.dp1{ font-size: 16px; text-align: center;}
-		#mainmenu li:hover a.dp1{color: #623300;}
-		#mainmenu:before{ content: ""; display: block; width: 1903px; height: 0; left: 0; overflow: hidden; position: absolute; top: 60px; z-index: 0; background: #fff; border-bottom: 3px solid transparent; transition: 0.5s;}
+		.sub{overflow: hidden; width: 240px; height: 0; position: absolute; left: 0; top: 50px; transition: 0.5s; z-index: 100;}
+		#mainmenu li a{display: block;  line-height: 40px; color: black; font-weight: bold;}	
+		#mainmenu li .sub a{text-align: left; font-size: 15px; text-indent: 22px; color: #623300; }
+		#mainmenu li a:hover {color: #623300;}	
+		#mainmenu li:hover .sub{ width: 130px; height: 170px; background: rgba(255, 255, 255, 0.54);}
+		#mainmenu li.m3:hover .sub{ width: 125px; height: 40px; background: rgba(255, 255, 255, 0.54);}
+		#mainmenu li.m4:hover .sub{ width: 125px; height: 80px; background: rgba(255, 255, 255, 0.54);}
+		#mainmenu li:before{ content: ""; display: block; width: 180px; height: 0px; left: 0; overflow: hidden; position: absolute; top: 60px; z-index: 0;  border-bottom: 3px solid transparent; transition: 0.5s;}
 		#mainmenu:hover::before{height: 240px; border-bottom: 3px solid #333;}
 		#mainmenu .sub a:hover{ color: #000;}
 		#mainmenu li a.dp1:after{content: ""; display: block; width: 130px; height: 3px; background: transparent; margin-left: -200px; transition: 0.5s;}
 		#mainmenu li a:hover::after{ background: #623300; margin-left: 0;}
-		#frm1{float: left; padding-top: 14px;}
-		.search{display: block; float: left; width: 40px; height: 40px; border-radius: 21px; overflow: hidden; text-indent: -9999px; background-color: #623300; background-image: url("icon/search.png"); background-repeat: no-repeat; background-position: center center;}
+		#frm1{width: 1000px; float: left; padding-top: 14px; }
+		.search{display: block; float: left; width: 40px; height: 40px; border-radius: 21px; overflow: hidden; text-indent: -9999px; background-color: #623300; background-image: url("icon/search.png"); background-repeat: no-repeat; background-position: center center; margin-left: 80px;}
 		#sel1{ display: block; float: left; width: 140px; margin-left: 15px; margin-top: 6px; line-height: 32px; height: 32px; border-radius: 5px 0px 0px 5px;}
 		#go_btn{display: block; float: left; width: 32px; height: 32px; line-height: 32px; margin-top: 5px; background: #eee; border-radius: 0px 5px 5px 0px;}
-		#search_form{position: absolute; top: 60px; text-outline: 110px; width: 1903px; left: 0; height: 0px; background: #fff; transition: 05.s; overflow: hidden; border-bottom: 3px solid transparent;}
-		#ck1:checked + #search_form{height: 200px; border-bottom: 3px solid #333;}
-		.close_btn{ display: block; width: 50px; height: 50px; cursor: pointer; background-image: url("./icon/XXXX.png"); background-position: center center; background-repeat: no-repeat; text-indent: -1000px; position: absolute; right: 30%; top: 0px;}
-		#keyword{ display: block; width: 550px; height: 70px; outline: 0; border: 0; background: rgba(0,0,0,0.5); margin-top: 50px; margin-left: 600px; float: left;}
-		.search_btn{ display: block; width: 70px; height: 70px; float: left; margin-top: 50px; margin-left: 10px;}
-		img{ width: 100%;}
-		.vs_box{ position: absolute; z-index: 10; top: 360px; left: 510px;}
+		#search_form{position: absolute; top: 145px; width: 1903px; left: 0; height: 0px; background: #fff; transition: 0.5s; overflow: hidden; border-bottom: 3px solid transparent;}
+		#ck1:checked + #search_form{height: 160px; border-bottom: 3px solid #333; z-index: 100;}
+		.close_btn{ display: block; width: 35px; height: 35px; cursor: pointer; background-image: url("./icon/XXXX.png"); background-position: center center; background-repeat: no-repeat; text-indent: -1000px; position: absolute; right: 30%; top: 0px; background-size: 35px 35px;}
+		#keyword{ display: block; width: 580px; height: 47px; outline: 0; border: 3px solid #623300; background: white; margin-top: 42px; margin-left: 600px; float: left; z-index: 10;  transition: 0.5s;}
+		.search_btn{ display: block; width: 53px; height: 53px; float: left; margin-top: 42px; margin-left: 10px; background-color: #623300; background-image: url("icon/search.png"); text-indent: -9999px; background-size: 59px 40px; background-position: center center; padding: 10px; background-repeat: no-repeat;  transition: 0.5s; cursor: pointer;  border-radius: 10px;}
+		#keyword:focus {  outline: none; width: 500px; transform: translateY(0px); border-radius: 10px; box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025); }
+		#keyword:focus ~ .search_btn { opacity:1; }
+		#con { width: 100%; height: 100%;  z-index: 100;}
+		.vs { width: 100vw; height: 600px; position: relative; overflow: hidden;}
+        .img_box { width: 100%; height: 600px; }
+        .img_box img { display: block; width: 100%; height: 600px; float: left; transition: 0.5s;}
+        .btn_box { width: 200px; height: 15px; position: absolute; z-index: 9; bottom: 100px; left: 800px; }
+        .btn_box label { display: block; background-color: #fff; width: 15px; height: 15px; float: left; border-radius: 10px; margin-left: 40px; cursor: pointer;}
+        .rad {display: none;}
+        #ra1:checked ~ .img_box .banner1 { margin-top: 0;}
+        #ra2:checked ~ .img_box .banner2 { height: 100%; margin-top: -31.25%;}
+        #ra3:checked ~ .img_box .banner3 { height: 100%; margin-top: -62.5%;}
+        #ra1:checked ~ .btn_box .btn1 { background: linear-gradient(to right, #f26c23, #fec226 ); width: 30px;}
+        #ra2:checked ~ .btn_box .btn2 { background: linear-gradient(to right, #f26c23, #fec226 ); width: 30px;}
+        #ra3:checked ~ .btn_box .btn3 { background: linear-gradient(to right, #f26c23, #fec226 ); width: 30px;}
+		.vs_box{ position: absolute; z-index: 10; top: 360px; left: 530px;}
 		.san_box{position: absolute; width: 100%; height: 100%; z-index: 11;}
 		@keyframes float{
 			0%{transform: translateY(-100px);}
@@ -63,6 +78,24 @@
 		}
 		.sand{ display: block; width: 50px; height: 50px; background-image: url("icon/Untitled-2.png"); background-repeat: no-repeat; background-position: 0 bottom ; animation: float 1s linear infinite forwards;}
 		.tit_box h2{ display: block; width: 450px; height: 200px; background-image: url("picture/title.png");}
+		.box{  width: 1500px; height: 600px; margin: -80px auto; }
+		.col_box, .col_box1{ display: block; float: left; }
+		.col_box { width: 400px; height: 600px; float: left; margin-left: 180px; }
+        .col_box1 { width: 400px; height: 600px; float: left;  margin-right: 40px;}
+		.col_fr{  text-align: center; display: block; float:left; width: 320px; border-top-left-radius: 10px; border-top-right-radius: 10px; position:relative;  height:80px; background-color: #fec12696;}
+		.col_fr1{ text-align: center; display: block; float:left; left:7%; width: 320px; border-top-left-radius: 10px; border-top-right-radius: 10px;  position:relative;  height:80px; background-color: #623300a8;}
+		.lst{ width: 320px; height: 300px; background-color: #f8d39270; float: left;}
+		.lst li { display: table; }
+		.lst1{width: 320px; height: 300px; background-color: #f8d39270; float: left; margin-left: 28px;}
+		.lst2{width: 320px; height: 100px; background-color: #f8d39270; float: left;}
+		.col_tit{ margin-top: 20px; font-weight: bold; color: white; font-size: 25px;}
+		.col_com{ color: white; font-size: 14px;}
+		.ico1, .ico2, .ico3{ margin-left: 10px; margin-top: 10px;}
+		.ico1{display: block; width: 50px; height: 50px; border-radius: 40px; overflow: hidden; text-indent: -9999px; background-color:#fec226; background-image: url("icon/42.png"); background-repeat: no-repeat; background-position: center center;}
+		.ico2{display: block; width: 50px; height: 50px; border-radius: 40px; overflow: hidden; text-indent: -9999px; background-color: #fec226; background-image: url("icon/52.png"); background-repeat: no-repeat; background-position: center center;}
+		.ico3{display: block; width: 50px; height: 50px; border-radius: 40px; overflow: hidden; text-indent: -9999px; background-color: #fec226; background-image: url("icon/240.png"); background-repeat: no-repeat; background-position: center center;}
+		.cate_tit{ display: block;}
+
 	</style>
 </head>
 <body>
@@ -78,11 +111,11 @@
 			</ul>
 		</div>
 		
-		<div class="hd_wrap">
+		<div class="hdm_wrap">
 			<a href="" class="logo"></a>
 			<nav id="mainmenu">
 				<ul>
-					<li><a href="sub1.html" class="dp1">축제소개</a>
+					<li><a href="sub1.html" class="dp1">&nbsp;&nbsp;&nbsp;축제소개</a>
 							<ul class="sub">
 								<li><a href="sub11.html">소개</a></li>
 								<li><a href="sub12.html">연혁</a></li>
@@ -90,7 +123,7 @@
 								<li><a href="sub14.html">배치도</a></li>
 							</ul>
 						</li>
-					<li><a href="sub2.html" class="dp1">축제안내</a>
+					<li><a href="sub2.html" class="dp1">&nbsp;&nbsp;&nbsp;축제안내</a>
 							<ul class="sub">
 								<li><a href="sub21.html">일정</a></li>
 								<li><a href="sub22.html">작품과 작가</a></li>
@@ -98,12 +131,12 @@
 								<li><a href="sub24.html">현장갤러리</a></li>
 							</ul>
 						</li>
-					<li><a href="sub3.html" class="dp1">사전예약</a>
+					<li class="m3"><a href="sub3.html" class="dp1">&nbsp;&nbsp;&nbsp;&nbsp;사전예약</a>
 							<ul class="sub">
 								<li><a href="sub31.html">온라인 신청</a></li>
 							</ul>
 						</li>
-					<li><a href="sub4.html" class="dp1">공지사항</a>
+					<li class="m4"><a href="sub4.html" class="dp1">&nbsp;&nbsp;&nbsp;&nbsp;공지사항</a>
 							<ul class="sub">
 								<li><a href="sub41.html">자주하는 질문</a></li>
 								<li><a href="sub42.html">조직위원회</a></li>
@@ -120,29 +153,31 @@
 					<button id="go_btn">GO</button>
 					<input type="checkbox" id="ck1">
 					<div id="search_form">
-					<label for="ck1" class="close_btn"></label>
-					<input type="text" id="keyword" class="search_txt">
-					<input type="submit" class="search_btn" value="GO">
+						<label for="ck1" class="close_btn"></label>
+						<input type="text" id="keyword" class="search_txt" placeholder="검색어를 입력하세요">
+						<input type="submit" class="search_btn" value="GO">
 					</div>
 				</form>
 			</nav>
 		</div>
 		</header>
-		<main>
-			<figure id="vs">
+		<main id="con">
+			<figure class="vs">
+				<input type="radio" name="ra" id="ra1" class="rad" checked>
+				<input type="radio" name="ra" id="ra2" class="rad">
+				<input type="radio" name="ra" id="ra3" class="rad">
 				<ul class="img_box">
-					<li class="item"><img src="./picture/Untitled-1.png" alt="배경이미지1"></li>
-					<li class="item"></li>
-					<li class="item"></li>
-					<li class="item"></li>
+					<li class="item"><img src="./picture/main.png" alt="배경이미지1" class="banner1"></li>
+					<li class="item"><img src="./picture/Untitled-1.png" alt="배경이미지1" class="banner2"></li>
+					<li class="item"><img src="./picture/23.png" alt="배경이미지1" class="banner3"></li>
 				</ul>
 				<ul class="btn_box">
-					<li class="btn"><button></button></li>
-					<li class="btn"><button></button></li>
-					<li class="btn"><button></button></li>
-					<li class="btn"><button></button></li>
+					<li><label for="ra1" class="btn1"></label></li>
+					<li><label for="ra2" class="btn2"></label></li>
+					<li><label for="ra3" class="btn3"></label></li>
 				</ul>
 			</figure>
+			
 			<div class="vs_box">
 				<div class="tit_box">
 					<div class="san_box">
@@ -157,62 +192,61 @@
 					<li class="ico_fr"><a href="">프로그램 예약</a></li>
 				</ul>
 			</div>
-			<div class="curve"></div>
 		</main>
-		<div class="col_box">
-			<ul class="col_box">
-				<div class="col_fr">
+		<div class="box">
+			<div class="col_box">
+				<ul class="col_fr">
 					<h3 class="col_tit">프로그램 소개</h3>
 					<p class="col_com">모래축제 참여 프로그램</p>
-				</div>
+				</ul>
 				<ul class="lst">
 					<li>
 						<a href="">
-							<img src="" alt="">
+							<a href="" class="ico1"></a>
 							<h4 class="cate_tit">모래조각대회</h4>
 							<p class="cate_com">모래조각 도전!</p>
 						</a>
 					</li>
-				</ul>
-				<ul class="lst">
+				
 					<li>
 						<a href="">
-							<img src="" alt="">
+							<a href="" class="ico2"></a>
 							<h4 class="cate_tit">거리 퍼레이드</h4>
 							<p class="cate_com">공연 예술</p>
 						</a>
 					</li>
-				</ul>
-				<ul class="lst">
+				
 					<li>
 						<a href="">
-							<img src="" alt="">
+							<a href="" class="ico3"></a>
 							<h4 class="cate_tit">모래속 보물찾기</h4>
 							<p class="cate_com">보물은 다내꺼야!</p>
 						</a>
 					</li>
 				</ul>
-			</ul>
-			<ul class="col_box">
-				<div class="col_fr">
+			</div>
+			<div class="col_box1">
+				<div class="col_fr1">
 					<h3 class="col_tit">오늘의 행사</h3>
 					<p class="col_com">해운대에서 펼쳐지는 모래축제</p>
 				</div>
-				<ul class="lst">
+				<ul class="lst1">
 					<li></li>
 					<li></li>
 					<li></li>
 				</ul>
-			</ul>
+			</div>
+			<div class="col_box2">
 				<div class="col_fr">
 					<h3 class="col_tit">자주하는 질문</h3>
 				</div>
-			<ul class="col_box">
+			<ul class="lst2">
 				<ul class="nt">
 					<li><a href="">야간에도 모래축제를 즐길 수 있나요?</a></li>
 					<li><a href="">반려견 출입이 가능한가요?</a></li>
 				</ul>
 			</ul>
+			</div>
 			<ul class="thum">
 				<li><a href="https://www.instagram.com/sandfestival2019/">인스타그램</a></li>
 				<li><a href="https://www.facebook.com/sandfestival2019/">페이스북</a></li>
