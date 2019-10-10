@@ -160,8 +160,8 @@
         background-image:url("./icon/iconfinder_phone_216352.png"); margin-top: 5px; }
 	.ico_link li a .ico2 { background-repeat: no-repeat;
         background-image:url("./icon/iconfinder_location-outline_216282.png"); margin-top: 5px; }
-    .ico_link li a.item1 .ico1 { background-position:-10px 0px; width: 25px; height: 60px; }    
-    .ico_link li a.item2 .ico2 { background-position:-10px 0px; width:12px; height: 60px; }    
+    .ico_link li a.item1 .ico1 { background-position:-5px 0px; width: 25px; height: 60px; }    
+    .ico_link li a.item2 .ico2 { background-position:-5px 0px; width:12px; height: 60px; }    
     #ft { height: 100px; background:#333; color:#fff; margin-left: 310px; width: 1280px;}   
     .fnb { float:left; margin-left: 20px;  }
     .fnb li { float:left; padding:10px; }  
