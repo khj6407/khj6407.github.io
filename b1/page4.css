@@ -1,0 +1,6 @@
+@charset "utf-8";
+
+.p5{position: relative; border-bottom: 1px solid #333; box-sizing: border-box;}
+.page_sub{ font-size: 24px; text-align: center; padding-bottom: 50px; border-bottom:1px solid #333;}
+.page_con1{ font-size: 19px; margin-left: 30px;}
+.page_pic4{float: left; padding: 20px; padding-right: 260px;}

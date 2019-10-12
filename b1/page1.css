@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+    body, html { overflow-y:auto; overflow-x: hidden;}   
+    .nav_top{width:100vw; height:40vh; }
+    h1{width: 100%; color: white; padding-top: 118px; padding-left:750px; display: table-cell; vertical-align: middle; margin-bottom: 20px; font-size: 56px; cursor: pointer;}
+    .cate_box { width:100vw; height:35vh; 
+        background-image:url("./picture/3.jpg"); background-size:contain; background-size: 100%; opacity: 1; background-repeat: no-repeat; left: 0; top: 0; } 
+    .tb_box {  margin-top:30px;  margin-left:20%;  }
+    .tb_box li { float:left; margin-left: 70px; width: 250px;  border-bottom:1px solid #000; border-top:1px solid #000; }
+    .tb_box li a { color:rgb(0, 0, 0); display:block; font-size: 25px; text-align: center; line-height: 60px; font-weight: bold;} 
+    .tb_box li:hover a{ background-color: #f7e9fc; color: #d01f6fa4; transition: 0.5s; border-top:1px solid #176c38; border-bottom:1px solid #176c38;}  
+    #frm1{margin-top:80px; border:2px solid #333; background-color:#eee;}
+    .box { width: 100vw; height: 40vh; margin:0 auto; overflow:hidden; text-align:center; margin-top:10vh; }
+    .page { width: 100vw; height:auto; position:relative; }
+   
+    .page_wrap { width: 1280px; height:auto; max-height: 100vh; margin:50px auto; }  
+    .page_pic1{float: left; padding: 20px; padding-right: 30px;}  
+    .page_con{ font-size: 19px; line-height: 1.6;}
+    .p_tit{ font-size: 26px; font-weight: bold; color: #176c38; padding-bottom: 5px;}
+    .page .page_wrap { display:none; } 
+    .page:target .page_wrap {display:block;} 
+    #ft { height: 100px; background:#333; color:#fff; margin-top: 21%; margin-left:0px; width: 100%; overflow-x: hidden; position: relative;}   
+    .fnb {padding-left:10%; float:left; margin-left: 20px; }
+    .fnb li { float:left; padding:10px; }  
+    .fnb li a { color:#fff; display:block; line-height:78px; } 
+    .fnb li a:after { content:"·"; padding-left: 20px; }  
+    .fnb li a.last:after { content:""; }
+    .copyright {  padding-right: 10%; float:right; line-height: 100px; }

@@ -1,0 +1,11 @@
+    @charset "utf-8";
+    
+    body, html { overflow-y:auto; }   
+    .box { width: 100vw; height: 40vh; margin:0 auto; overflow:hidden; text-align:center; margin-top:10vh; }
+    .page { width: 100vw; height:auto; position:relative; }
+    .page_pic3{float: right; padding: 15px; padding-right: 10%;}  
+    .page_con{ margin-left:6%; font-size: 19px; line-height: 1.6;}
+    .page_tit3 { text-align:center; line-height:80px; font-size:48px; }
+    .p_tit{ font-size: 24px; font-weight: bold; color: #176c38; padding-bottom: 5px;}
+    .p_t{font-size: 22px;}
+    .sub{ font-size: 20px; color: #d01f6f;}
