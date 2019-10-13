@@ -18,93 +18,9 @@
     <link rel="stylesheet" href="common.css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+	<link rel="stylesheet" href="common.css">
     <style>
-		*{margin: 0px; padding: 0; }
-		body, html{ font-family: sans-serif;}
-		a{text-decoration:none;}
-		ul{list-style: none;}
-		.hd{ width: 100%; height: 100%; background-image: url("./picture/hd_bg.jpg"); }
-		.hd_wrap{width: 1903px; position: relative; margin: 0 auto; height: 80px; }
-		.blogo{display: block; width: 148px; height: 40px; background-image: url("./icon/25.png"); margin: 2px; margin-left: 450px; float: left; }
-		.top{ float: right; margin-right:350px;}
-		.top li{ float: left; }
-		.top li a{color: white; display: block; margin-right: 20px; line-height: 50px; font-size: 14px;}
-		.hdm_wrap{ width: 100%; height: 70px;  z-index: 10; }
-		.logo{display: block; float: left; z-index: 0; margin-left: 450px; width: 135px; height: 35px; background-image: url("./icon/hae.png"); }
-		#mainmenu {float: left; margin-left: 20px; margin-top: 5px; width: 1000px; z-index: 100; }
-		#mainmenu li{float: left; width: 130px;  position: relative; font-size: 18px;}
-		#mainmenu li .sub li{clear: both; }
-		.sub{overflow: hidden; width: 240px; height: 0; position: absolute; left: 0; top: 50px; transition: 0.5s; z-index: 100;}
-		#mainmenu li a{display: block;  line-height: 40px; color: black; font-weight: bold;}	
-		#mainmenu li .sub a{text-align: left; font-size: 15px; text-indent: 22px; color: #623300; }
-		#mainmenu li a:hover {color: #623300;}	
-		#mainmenu li:hover .sub{ width: 130px; height: 170px; background: #f8d39271;}
-		#mainmenu li.m3:hover .sub{ width: 125px; height: 40px; background: #f8d39271;}
-		#mainmenu li.m4:hover .sub{ width: 125px; height: 80px; background: #f8d39271;}
-		#mainmenu li:before{ content: ""; display: block; width: 180px; height: 0px; left: 0; overflow: hidden; position: absolute; top: 60px; z-index: 0;  border-bottom: 3px solid transparent; transition: 0.5s;}
-		#mainmenu:hover::before{height: 240px; border-bottom: 3px solid #333;}
-		#mainmenu .sub a:hover{ color: #000;}
-		#mainmenu li a.dp1:after{content: ""; display: block; width: 130px; height: 3px; background: transparent; margin-left: -200px; transition: 0.5s;}
-		#mainmenu li a:hover::after{ background: #623300; margin-left: 0;}
-		#frm1{width: 1000px; float: left; padding-top: 14px; }
-		.search{display: block; float: left; width: 40px; height: 40px; border-radius: 21px; overflow: hidden; text-indent: -9999px; background-color: #623300; background-image: url("icon/search.png"); background-repeat: no-repeat; background-position: center center; margin-left: 80px;}
-		#sel1{ display: block; float: left; width: 140px; margin-left: 15px; margin-top: 6px; line-height: 32px; height: 32px; border-radius: 5px 0px 0px 5px;}
-		#go_btn{display: block; float: left; width: 32px; height: 32px; line-height: 32px; margin-top: 5px; background: #eee; border-radius: 0px 5px 5px 0px;}
-		#search_form{position: absolute; top: 145px; width: 1903px; left: 0; height: 0px; background: #fff; transition: 0.5s; overflow: hidden; border-bottom: 3px solid transparent;}
-		#ck1:checked + #search_form{height: 160px; border-bottom: 3px solid #333; z-index: 100;}
-		.close_btn{ display: block; width: 35px; height: 35px; cursor: pointer; background-image: url("./icon/XXXX.png"); background-position: center center; background-repeat: no-repeat; text-indent: -1000px; position: absolute; right: 30%; top: 0px; background-size: 35px 35px;}
-		#keyword{ display: block; width: 580px; height: 47px; outline: 0; border: 3px solid #623300; background: white; margin-top: 42px; margin-left: 600px; float: left; z-index: 10;  transition: 0.5s;}
-		.search_btn{ display: block; width: 53px; height: 53px; float: left; margin-top: 42px; margin-left: 10px; background-color: #623300; background-image: url("icon/search.png"); text-indent: -9999px; background-size: 59px 40px; background-position: center center; padding: 10px; background-repeat: no-repeat;  transition: 0.5s; cursor: pointer;  border-radius: 10px;}
-		#keyword:focus {  outline: none; width: 500px; transform: translateY(0px); border-radius: 10px; box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025); }
-		#keyword:focus ~ .search_btn { opacity:1; }
-		#con { width: 100%; height: 100%;  z-index: 100;}
-		.vs { width: 100vw; height: 600px; position: relative; overflow: hidden;}
-        .img_box { width: 100%; height: 600px; }
-        .img_box img { display: block; width: 100%; height: 600px; float: left; transition: 0.5s;}
-        .btn_box { width: 200px; height: 15px; position: absolute; z-index: 9; bottom: 100px; left: 800px; }
-        .btn_box label { display: block; background-color: #fff; width: 15px; height: 15px; float: left; border-radius: 10px; margin-left: 40px; cursor: pointer;}
-        .rad {display: none;}
-        #ra1:checked ~ .img_box .banner1 { margin-top: 0;}
-        #ra2:checked ~ .img_box .banner2 { height: auto; margin-top: -31.25%;}
-        #ra3:checked ~ .img_box .banner3 { height: auto; margin-top: -62.5%;}
-        #ra1:checked ~ .btn_box .btn1 { background: linear-gradient(to right, #f26c23, #fec226 ); width: 30px;}
-        #ra2:checked ~ .btn_box .btn2 { background: linear-gradient(to right, #f26c23, #fec226 ); width: 30px;}
-        #ra3:checked ~ .btn_box .btn3 { background: linear-gradient(to right, #f26c23, #fec226 ); width: 30px;}
-		.vs_box{ position: absolute;  top: 400px; left: 530px;}
-		.san_box{position: absolute; width: 100%; height: 100%; }
-		@keyframes float{
-			0%{transform: translateY(-100px);}
-			50%{transform: translateY(-110px);}
-			100%{transform: translateY(-100px);}
-		}
-		.sand{ display: block; width: 50px; height: 50px; padding-top:37px; padding-left: 5px; background-image: url("icon/Untitled-2.png"); background-repeat: no-repeat;  animation: float 1s linear infinite forwards;}
-		.tit_box h2{ display: block; width: 450px; height: 200px; background-image: url("picture/title.png");}
-		.service{ position: absolute; top:-120px; left: 70%; width: 100px; height: auto; margin-left: 380px; z-index: 30;}
-		.icon_box li{width: 100px; height: 100px; margin-bottom: 20px;}
-		.ico_fr1, .ico_fr2, .ico_fr3{display: block; width: 100%; height: 100%; border-radius: 50px; text-align:center; font-weight: bold; color: white; font-size: 15px; background-color:#623300d2; }
-		.ico_fr1:hover { background-color: #f8d3928c; color: #623300;}
-		.ico_fr2:hover { background-color: #f8d3928c; color: #623300;}
-		.ico_fr3:hover { background-color: #f8d3928c; color: #623300;}
-		.icon_box .ico_fr1 span, .icon_box .ico_fr2 span, .icon_box .ico_fr3 span{display: block; letter-spacing: -0.08em; line-height: 1.2;}
-		.ico_fr1 i, .ico_fr2 i, .ico_fr3 i{display: inline-block; font-size: 38px;  margin-top: 12px; margin-bottom: 4px; color: white; }
-		.box{  width: 1500px; height: 600px; margin: -80px auto; }
-		.col_box, .col_box1{ display: block; float: left; }
-		.col_box { width: 400px; height: 600px; float: left; margin-left: 180px; }
-        .col_box1 { width: 400px; height: 600px; float: left;  margin-right: 40px;}
-		.col_fr{  text-align: center; display: block; float:left; width: 320px; border-top-left-radius: 10px; border-top-right-radius: 10px; position:relative;  height:80px; background-color: #fec12696;}
-		.col_fr1{ text-align: center; display: block; float:left; left:7%; width: 320px; border-top-left-radius: 10px; border-top-right-radius: 10px;  position:relative;  height:80px; background-color: #623300a8;}
-		.lst{ width: 320px; height: 300px; background-color: #f8d39270; float: left;}
-		.lst li { display: table; }
-		.lst1{width: 320px; height: 300px; background-color: #f8d39270; float: left; margin-left: 28px;}
-		.lst2{width: 320px; height: 100px; background-color: #f8d39270; float: left;}
-		.col_tit{ margin-top: 20px; font-weight: bold; color: white; font-size: 25px;}
-		.col_com{ color: white; font-size: 14px;}
-		.ico1, .ico2, .ico3{ margin-left: 10px; margin-top: 10px;}
-		.ico1{display: block; width: 50px; height: 50px; border-radius: 40px; overflow: hidden; text-indent: -9999px; background-color:#fec226; background-image: url("icon/42.png"); background-repeat: no-repeat; background-position: center center;}
-		.ico2{display: block; width: 50px; height: 50px; border-radius: 40px; overflow: hidden; text-indent: -9999px; background-color: #fec226; background-image: url("icon/52.png"); background-repeat: no-repeat; background-position: center center;}
-		.ico3{display: block; width: 50px; height: 50px; border-radius: 40px; overflow: hidden; text-indent: -9999px; background-color: #fec226; background-image: url("icon/240.png"); background-repeat: no-repeat; background-position: center center;}
-		.cate_tit{ display: block;}
-
+		
 	</style>
 </head>
 <body>
@@ -193,9 +109,10 @@
 						<div class="sand">
 					<h2 class="vs_tit"></h2>
 					</div>
+					
+				</div>	
 				</div>
-					<p class="vs_com">5. 24(금) ~ 5. 27(월)까지 해운대 해수욕장에서 만나요! ※ 모래조각전 전시 6.9.(일)까지 </p>
-				</div>
+				<p class="vs_com">5. 24(금) ~ 5. 27(월)까지 해운대 해수욕장에서 만나요! ※ 모래조각전 전시 6.9.(일)까지 </p>
 				<section class="service">
 				<ul class="icon_box">
 					<li >
@@ -222,32 +139,40 @@
 		</main>
 		<div class="box">
 			<div class="col_box">
-				<ul class="col_fr">
+				<div class="col_fr">
 					<h3 class="col_tit">프로그램 소개</h3>
 					<p class="col_com">모래축제 참여 프로그램</p>
-				</ul>
+				</div>
 				<ul class="lst">
 					<li>
-						<a href="">
-							<a href="" class="ico1"></a>
-							<h4 class="cate_tit">모래조각대회</h4>
-							<p class="cate_com">모래조각 도전!</p>
+						<div class="list">
+						<a href="" class="lst_body">
+							<span class="icon"><a href="" class="ico1"></a></span>
+							<span class="text">
+								<h4 class="cate_tit">모래조각대회</h4>
+								<p class="cate_com">모래조각 도전!</p>
+							</span>
+						</a>
+					</div>
+					</li>
+				
+					<li>
+						<a href="" class="lst_body">
+							<span class="icon"><a href="" class="ico2"></a></sapn>
+							<span class="text">
+								<h4 class="cate_tit">거리퍼레이드</h4>
+								<p class="cate_com">공연·예술</p>
+							</span>
 						</a>
 					</li>
 				
 					<li>
-						<a href="">
-							<a href="" class="ico2"></a>
-							<h4 class="cate_tit">거리 퍼레이드</h4>
-							<p class="cate_com">공연 예술</p>
-						</a>
-					</li>
-				
-					<li>
-						<a href="">
-							<a href="" class="ico3"></a>
-							<h4 class="cate_tit">모래속 보물찾기</h4>
-							<p class="cate_com">보물은 다내꺼야!</p>
+						<a href="" class="lst_body">
+							<span class="icon"><a href="" class="ico3"></a></span>
+							<span class="text">
+								<h4 class="cate_tit">모래속보물찾기</h4>
+								<p class="cate_com">보물은 다 내꺼야!</p>
+							</span>
 						</a>
 					</li>
 				</ul>
@@ -269,32 +194,42 @@
 				</div>
 			<ul class="lst2">
 				<ul class="nt">
-					<li><a href="">야간에도 모래축제를 즐길 수 있나요?</a></li>
-					<li><a href="">반려견 출입이 가능한가요?</a></li>
+					<li><a href=""><i class="fas fa-hourglass-half"></i>
+						야간에도 모래축제를 즐길 수 있나요?</a></li>
+					<li><a href=""><i class="fas fa-hourglass-half"></i>
+						반려견 출입이 가능한가요?</a></li>
 				</ul>
 			</ul>
 			</div>
-			<ul class="thum">
-				<li><a href="https://www.instagram.com/sandfestival2019/">인스타그램</a></li>
-				<li><a href="https://www.facebook.com/sandfestival2019/">페이스북</a></li>
-			</ul>
 		</div>
+		<ul class="thum">
+				<li>
+					<a href="https://www.instagram.com/sandfestival2019/" class="insta">
+					<i class="fab fa-instagram"></i>&nbsp;&nbsp;인스타그램
+					</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/sandfestival2019/" class="face">
+						<i class="fab fa-facebook-square"></i> &nbsp;&nbsp;페이스북
+					</a>
+				</li>
+			</ul>
 		<footer id="ft">
 			<div class="ft_wrap">
-				<div class="ft_com"></div>
 				<div class="ft_mid">
-					<nav id="fnb">
-						<ul>
-							<li>개인정보처리방침</li>
-							<li>저작권보호정책</li>
-							<li>오시는 길</li>
-						</ul>
-						<p class="copyright">(우)48095 부산광역시 해운대구 중동2로 11(중동) 
-대표전화 : (051)749-4000 팩스 : (051)749-4444
-Copyright© 2019 Haeundae-Gu. All rights reserved.</p>
-					</nav>
-				</div>
-				<div class="ft_logo"></div>
+					<span id="fnb">
+						<span class="ft_logo"><a href="index.html"><img src="./picture/ftlogo.png" alt="푸터로고"></a></span>
+							<ul class="fnb">
+								<li>개인정보처리방침</li>
+								<li>저작권보호정책</li>
+								<li class="last">오시는 길</li>
+								
+							</ul>
+							<p class="copyright">(우)48095 부산광역시 해운대구 중동2로 11(중동) <br> 
+											대표전화 : (051)749-4000 팩스 : (051)749-4444 <br> 
+											Copyright© 2019 Haeundae-Gu. All rights reserved.</p>					
+				</span>	
+				</div>			
 			</div>
 		</footer>
 </body>
