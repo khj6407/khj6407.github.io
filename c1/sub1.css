@@ -1,19 +1,19 @@
 @charset "utf-8";
 
-.local_menu{margin-top:30px;  margin-left:15%; }
+.local_menu{margin-top:30px;  margin-left:17%; }
 .local_menu li{float: left;  float:left;  width: 250px;  border-bottom:2px solid #215dc5;}
 .local_menu li a{color:rgb(0, 0, 0); display:block; font-size: 20px; text-align: center; line-height: 60px; font-weight: bold;}
 .local_menu li.fst{border-bottom: 3px solid #2147c5;}
 .local_menu a:hover{color: #2147c5;}
-.search_box{ display:flex; float:left; margin-left: 14%; margin-top: 40px; width: 1280px; height: 150px; background-color: #e1eafa; box-shadow: 10px 5px 5px 0px #d7d7d8be;}
+.search_box{ display:flex; float:left; margin-left: 17%; margin-top: 40px; width: 1280px; height: 150px; background-color: #e1eafa; box-shadow: 10px 5px 5px 0px #d7d7d8be;}
 .search_tit{font-size: 24px; font-weight: 600; margin: 57px 80px; }
 select, #keyword1, #search1{ margin-top: 55px; }
 .search_box select{ float: left; font-size: 20px; width: 120px; height: 40px; margin-right: 40px;}
 .year{margin-left: 110px;}
 #keyword1{ width: 200px; height: 40px; margin-right: 10px;}
 #search1{ width: 55px; height: 30px; background-color: rgb(170, 169, 169); font-size: 18px; padding-top: 10px;text-align: center; border-radius: 6px;}
-.data{clear: both; margin-left: 15%; font-size: 20px; }
-table{width: 1280px; height: 400px; text-align: center; margin-top: 380px;}
+.data{clear: both; margin-left: 17%; font-size: 20px; }
+table{width: 1280px; height: 400px; text-align: center; margin-top: 380px; }
 table a{color:#333;}
 thead{ background-color: #cde3fc;}
 tbody{background-color: #eef3fc80;}

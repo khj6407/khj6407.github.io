@@ -6,7 +6,7 @@ a{text-decoration:none;}
 ul{list-style: none;}
 button, a, input{ border: 0; outline: 0;}
  #language{display: block; width: 100px; height: 20px;  margin: 2px; float: left; margin-left: 20%; margin-top: 6px;}
-.hd_wrap{width: 100px; height: 100px; background-image: url("picture/hd_bg.jpg"); width: 1903px; position: relative; margin: 0 auto; height: 30px; }
+.hd_wrap{width: 100px; height: 100px; background-image: url("picture/hd_bg.jpg"); width: 100%; position: relative; margin: 0 auto; height: 30px; }
 .top{ display: block; float: right; margin-right: 20%; }
 .top li{float: left; }
 .top li a{display: block; color: black;  line-height: 30px; padding: 0 20px; font-size: 13px; color: white;}
@@ -35,7 +35,7 @@ h4{margin-left: 590px; cursor: pointer; color: rgb(75, 74, 74);}
 #page2{background-color: #eff2f8; width: 100%; height: 300px; z-index: 90; }
 #page2 li{ display: block; float: left; position: relative;  margin-top: 65px; margin-left: 10%;}
 #page2 li a{ color: black; }
-.q_menu{display: block; margin-left: 6%;}
+.q_menu{display: block; margin-left: 8%;}
 .q_menu a span{margin-left: 10px;}
 .q_menu1{display: block; width: 100px; height: 100px; background-image: url("icon/49-128.png"); }
 .q_menu2{display: block; width: 100px; height: 100px; background-image: url("icon/43-128.png");}
