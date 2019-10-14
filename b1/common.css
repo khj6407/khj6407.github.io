@@ -151,7 +151,7 @@
     .btn_box li button { display:block; width:150px; height:14px; background-color:#666; }    
     .btn_box li.on button { background-color:#d01f70; }  
         
-    .ico_link { clear:both; margin-top:50px; margin-left: 10%; width: 1280px;  height: 64px; background:#fff; overflow: hidden; position: relative;} 
+    .ico_link { clear:both; margin: 0 auto; margin-top: 60px; width: 1280px;  height: 64px; background:#fff; overflow: hidden; position: relative;} 
     .ico_link li { float:left; width: 50%; height: 64px; }   
     .ico_link li a { display:block; color:#333; font-size:22px; line-height: 64px; text-align: center; background:#fff; padding-left: 100px; }  
     .ico_link li a.item2 { background:#f0f0f0; }  
@@ -162,7 +162,7 @@
         background-image:url("./icon/iconfinder_location-outline_216282.png"); margin-top: 5px; }
     .ico_link li a.item1 .ico1 { background-position:-6px 0px; width: 25px; height: 60px; }    
     .ico_link li a.item2 .ico2 { background-position:-6px 0px; width:15px; height: 60px; }    
-    #ft { height: 100px; background:#333; color:#fff; margin-left: 10%;  width: 1280px; overflow-x: hidden; position: relative;}   
+    #ft {clear: both; height: 100px; background:#333; color:#fff; margin: 0 auto;  width: 1280px; overflow-x: hidden; position: relative;}   
     .fnb { float:left; margin-left: 20px;  }
     .fnb li { float:left; padding:10px; }  
     .fnb li a { color:#fff; display:block; line-height:78px; } 
