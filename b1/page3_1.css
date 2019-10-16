@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+.page_pic3_1{ float: right; padding: 15px; margin: 15px; margin-right: 8%; box-shadow: rgb(163, 4, 82) 0px 0px 10px;}
+#jb_festival{ width: 700px; padding: 10px; margin-left: 30%; margin-bottom: 70px; float: left;}
+.board{width: 100%; overflow: hidden; position: relative; margin-top: 15px; float: right; margin-right: 45%;}
+.data{ width: 100%; text-align: center; font-size: 18px; line-height: 2;}
+th{background-color: rgba(247, 235, 252, 0.51);}
+tr:hover{ background-color: rgba(245, 217, 255, 0.56);}
+i{color: #d01f70;}
