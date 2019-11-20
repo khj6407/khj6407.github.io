@@ -10,7 +10,7 @@
 		.top{ float: right; margin-right:350px;}
 		.top li{ float: left; }
 		.top li a{color: white; display: block; margin-right: 20px; line-height: 50px; font-size: 14px;}
-		.hdm_wrap{ width: 100%; height: 70px;  z-index: 10; overflow: hidden;}
+		.hdm_wrap{ width: 100%; height: 70px;  z-index: 10;}
 		.logo{display: block; float: left; z-index: 0; margin-left: 450px; width: 135px; height: 35px; background-image: url("./icon/hae.png"); }
 		#ck1{ display: none;}
 		#mainmenu {float: left; margin-left: 20px; margin-top: 5px; width: 1000px; z-index: 100; }
