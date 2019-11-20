@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+.boxs {
+  width: 100%;
+  margin: 5%;
+  animation: page 1.5s linear;
+}
+
+@keyframes page {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.boxs_title {
+  color: #666;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 4%;
+}
+
+.boxs .boxs-wrap {
+  margin: 3%;
+  width: 350px;
+  height: 70px;
+  cursor: pointer;
+  font-family: "Staatliches", sans-serif;
+}
+
+.boxs .boxs-wrap .boxs__box {
+  position: absolute;
+  font-size: 22px;
+  margin-left: 40px;
+  letter-spacing: 5px;
+  line-height: 70px;
+  font-weight: bold;
+}
+
+.boxs .boxs-wrap .boxs__box i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: rgb(255, 174, 0);
+}
+
+.boxs .boxs-wrap .boxs__box-text {
+  position: absolute;
+  background-color: #333;
+  width: 350px;
+  height: 72px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  color: #ffffff;
+  border-radius: 40px;
+  border-bottom-left-radius: 0px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 70px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+  margin-left: 370px;
+  margin-top: 30px;
+}
+
+.boxs .boxs-wrap:hover .boxs__box-text {
+  opacity: 1;
+  visibility: visible;
+  transform-origin: 0px 680px;
+  animation: texthover 1.3s forwards;
+}
+
+@keyframes texthover {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+.main_pic {
+  box-sizing: border-box;
+  background-image: url("../img/mainimg.jpg");
+  width: 350px;
+  height: 800px;
+  margin-left: 950px;
+  margin-top: -750px;
+}

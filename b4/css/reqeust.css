@@ -1,0 +1,232 @@
+body {
+  background-color: #ffffff;
+  margin: 5%;
+}
+*::selection {
+  background: #0b0b0b;
+  color: #fdd748;
+}
+@keyframes view {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+a.bread img {
+  display: block;
+  float: left;
+}
+.des {
+  display: block;
+  top: 2%;
+}
+.request_logo {
+  margin-top: 20%;
+}
+.board {
+  margin: 3%;
+  padding-top: 30px;
+  background-image: url("../img/request.png");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.12),
+    5px 5px 5px rgba(0, 0, 0, 0.24);
+}
+
+.selector {
+  margin: 2%;
+  animation: view 1s linear;
+}
+.selector span {
+  color: #7e7e7e;
+  font-size: 18px;
+  line-height: 2;
+  font-family: "Anton", sans-serif;
+}
+.selector_title,
+.money_title {
+  line-height: 2.4;
+  font-size: 22px;
+  font-weight: bold;
+  color: #0b0b0b;
+}
+.selector .selector__checkbox {
+  cursor: pointer;
+  background: #ffffff;
+  border: none;
+  border-radius: 3px;
+  width: 14px;
+  height: 14px;
+  line-height: 18px;
+  margin: -3px 8px 0 0;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+}
+
+.reqeust__input {
+  margin-top: 30px;
+  animation: view 2s linear;
+}
+
+.reqeust__input .title .title__title,
+.reqeust__input .author .author__author,
+.reqeust__input .content .content__content {
+  margin-bottom: 50px;
+}
+
+.reqeust__input .title .title__text,
+.reqeust__input .author .author__text,
+.reqeust__input .content .content__text,
+.reqeust__input .file .file__text {
+  color: #7e7e7e;
+  font-size: 18px;
+  font-family: "Anton", sans-serif;
+  padding: 10px 10px;
+}
+
+.reqeust__input .title .title__title,
+.reqeust__input .author .author__author {
+  border: none;
+  border-bottom: 1px solid #7f7f7f;
+  padding: 5px 8px;
+  outline: none;
+  font-size: 20px;
+
+  caret-color: rgb(255, 123, 0);
+}
+
+.reqeust__input .content .content__content {
+  resize: none;
+  width: 350px;
+  outline: none;
+  font-size: 18px;
+  padding: 5px 20px;
+  box-shadow: 1px 0px 3px 2px #dddddd;
+  caret-color: rgb(255, 123, 0);
+}
+
+.file {
+  margin-bottom: 50px;
+}
+
+.file .file__file {
+  font-size: 14px;
+  outline: none;
+}
+
+.submit .submit__submit {
+  width: 120px;
+  border: 0px;
+  font-weight: bold;
+  padding: 10px 40px;
+  margin: 10px 10px;
+  margin-bottom: 10%;
+  border-radius: 22px;
+  background: #0b0b0b;
+  color: #fdd748;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 5px 5px 5px rgba(0, 0, 0, 0.24);
+}
+i {
+  color: #292720;
+}
+.submit {
+  margin: 0 auto;
+  text-align: right;
+}
+
+.submit .submit__submit:hover {
+  color: #0b0b0b;
+  background: #fafafa;
+}
+.des {
+  font-size: 20px;
+  margin: 10%;
+}
+.footer {
+  border-top: 1px solid #d5d5d5;
+  text-align: center;
+  width: 100%;
+  height: 140px;
+  padding-bottom: 20px;
+}
+
+.footer .footer__title {
+  margin: 2% 0px;
+  display: inline-block;
+  font-size: 30px;
+  font-family: "Anton", sans-serif;
+  color: #b0b0b0;
+}
+
+.footer .footer__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 40px;
+  color: #cacaca;
+}
+
+@keyframes footerHober {
+  from {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.footer .footer__list .footer__list-col-1,
+.footer .footer__list .footer__list-col-2,
+.footer .footer__list .footer__list-col-3 {
+  cursor: pointer;
+  padding-bottom: 20px;
+}
+
+.footer .footer__list .footer__list-col-1:hover,
+.footer .footer__list .footer__list-col-2:hover,
+.footer .footer__list .footer__list-col-3:hover {
+  animation: footerHober 1s linear;
+}
+
+.footer .footer__list .footer__list-col-1 .text {
+  margin-top: 2%;
+  font-size: 18px;
+}
+
+.footer .footer__list .footer__list-col-2 .text {
+  margin-top: 2%;
+  font-size: 18px;
+}
+
+.footer .footer__list .footer__list-col-3 .text {
+  margin-top: 2%;
+  font-size: 18px;
+}
+#totop {
+  position: fixed;
+  right: 2%;
+  bottom: 100px;
+  z-index: 999;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  background: #fcb127;
+  color: #fff;
+  font-size: 28px;
+  border-radius: 32px;
+  box-shadow: 0px 0px 12px rgb(99, 59, 1);
+}
+#totop:hover {
+  background: #fdd748;
+  color: #fff;
+}
