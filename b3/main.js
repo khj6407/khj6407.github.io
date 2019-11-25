@@ -71,34 +71,34 @@ $(document).ready(function() {
     }, 2900);
   });
 
-  $(".num_box li").click(function() {
-    clearInterval(intv1);
+//   $(".num_box li").click(function() {
+//     clearInterval(intv1);
 
-    var idx = $(this).index();
+//     var idx = $(this).index();
 
-    var tar =
-      parseInt(
-        $(".num_box li")
-          .eq(0)
-          .attr("data-val")
-      ) - 1;
+//     var tar =
+//       parseInt(
+//         $(".num_box li")
+//           .eq(0)
+//           .attr("data-val")
+//       ) - 1;
 
-    if (idx != tar) {
-      for (var a = 0; a < idx - 1; a++) {
-        $(".num_box li")
-          .eq(0)
-          .appendTo($(".num_box"));
+//     if (idx != tar) {
+//       for (var a = 0; a < idx - 1; a++) {
+//         $(".num_box li")
+//           .eq(0)
+//           .appendTo($(".num_box"));
 
-        $(".img_box li")
-          .eq(0)
-          .appendTo($(".img_box"));
-      }
+//         $(".img_box li")
+//           .eq(0)
+//           .appendTo($(".img_box"));
+//       }
 
-      frAni();
-    }
+//       frAni();
+//     }
 
-    intv1 = setInterval(function() {
-      frAni();
-    }, 2900);
-  });
-});
+//     intv1 = setInterval(function() {
+//       frAni();
+//     }, 2900);
+//   });
+// });
