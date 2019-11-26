@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <!-- 문서 정보 -->
+    <!-- og 정보 -->
+    <!-- 트위터 또는 페이스북 연결정보 -->
+    <!-- 파비콘 정보  -->
+    <!-- 모바일일 때 주소창 숨기기 -->
+    <meta
+      name="keyword"
+      content="스톤헨지, 스톤헨즈, STONEHENgE, 스톤헨지목걸이, 스톤헨지귀걸이, 목걸이, 귀걸이, 로즈몽, 귀걸이 추천, 목걸이 추천"
+    />
+
+    <meta
+      name="description"
+      content="스톤헨지 주얼리는 ‘Beautiful Moments’라는 슬로건 아래 클래식하고 우아한 브랜드 이미지를 선보입니다."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Brand | STONEHENgE" />
+    <meta
+      property="og:description"
+      content="스톤헨지 주얼리는 ‘Beautiful Moments’라는 슬로건 아래 클래식하고 우아한 브랜드 이미지를 선보입니다."
+    />
+
+    <meta property="og:image" content="http://stonehenge.co.kr/img/logo3.png" />
+    <meta property="og:url" content="http://stonehenge.co.kr/" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Brand | STONEHENgE" />
+    <meta
+      name="twitter:description"
+      content="스톤헨지 주얼리는 ‘Beautiful Moments’라는 슬로건 아래 클래식하고 우아한 브랜드 이미지를 선보입니다."
+    />
+
+    <meta
+      name="twitter:image"
+      content="http://stonehenge.co.kr/img/logo3.png"
+    />
+
+    <meta name="twitter:domain" content="http://stonehenge.co.kr/" />
+    <title>BRAND | STONEHENgE</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    />
+    <link rel="stylesheet" href="common.css" />
+    <style>
+      .bread {
+        clear: both;
+        padding-left: 5rem;
+        line-height: 55px;
+        background: #6bbac9;
+        color: #fff;
+      }
+      .bread a,
+      .bread span {
+        color: #fff;
+      }
+      .vs {
+        width: 100%;
+        height: auto;
+      }
+      .vs img {
+        display: block;
+        width: 80%;
+        height: auto;
+        padding-top: 5%;
+        margin: 0 auto;
+      }
+      .page {
+        width: 100%;
+        border-top: 5px solid #eee;
+        display: none;
+      }
+      .page.on {
+        display: block;
+      }
+      .page_tit {
+        padding-left: 5%;
+        line-height: 3;
+      }
+      .lst1 {
+        clear: both;
+      }
+      .lst1 li {
+        clear: both;
+        width: 95%;
+        margin: 30px auto;
+        box-shadow: 0px 0px 10px #333;
+        min-height: 500px;
+      }
+      .lst1 li a {
+        display: block;
+        color: #333;
+      }
+      .lst1 li img {
+        display: block;
+        padding-top: 5%;
+        margin: 20px auto;
+      }
+      .cate_tit {
+        text-align: center;
+        line-height: 3;
+      }
+      .cate_com {
+        padding: 1.5rem;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+
+      .tb_box {
+        clear: both;
+        margin-top: 20px;
+        padding-top: 30px;
+      }
+      .tb_box .tab {
+        float: left;
+        width: 33.333333%;
+        line-height: 32px;
+        text-align: center;
+        color: #333;
+        background: #eeeeee;
+        cursor: pointer;
+      }
+      .tb_box .tab:hover {
+        background-color: #cacaca;
+      }
+      .tb_box .tab.on {
+        background-color: #6bbac9;
+        color: #fff;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(".tb_box .tab").click(function(index) {
+          var tar = $(this).index();
+          $(".page")
+            .eq(tar)
+            .addClass("on");
+          $(".page")
+            .eq(tar)
+            .siblings()
+            .removeClass("on");
+          $(this).addClass("on");
+          $(this)
+            .siblings()
+            .removeClass("on");
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" id="ck1" class="n_item" />
+    <input type="checkbox" id="ck2" class="n_item" />
+    <header class="hd">
+      <label for="ck1" class="lst_call">
+        <i class="xi-bars"></i>
+        <i class="xi-close"></i>
+      </label>
+      <a href="index.html" class="logo">
+        <img src="./img/logo-1.png" alt="로고" />
+      </a>
+      <label for="ck2" class="top_call">
+        <i class="fas fa-gem"></i>
+        <i class="far fa-gem"></i>
+      </label>
+    </header>
+    <nav id="gnb">
+      <ul class="menu">
+        <li><a href="sub1.html" rel="external">BRAND</a></li>
+        <li><a href="sub2.html" rel="external">COLLECTION</a></li>
+        <li><a href="sub3.html" rel="external">ITEM</a></li>
+        <li><a href="sub4.html" rel="external">ISSUE</a></li>
+        <li><a href="sub5.html" rel="external">STORE</a></li>
+      </ul>
+    </nav>
+    <nav id="top">
+      <ul class="menu">
+        <li><a href="login.html" rel="external">상단1</a></li>
+        <li><a href="join.html" rel="external">상단2</a></li>
+        <li><a href="contact.html" rel="external">상단3</a></li>
+      </ul>
+    </nav>
+    <main class="content">
+      <div class="blank">
+        <div class="bread">
+          <a href="index.html" class="home"><i class="xi-home"></i></a> &gt;
+          <span class="cur">BRAND</span>
+        </div>
+      </div>
+      <figure class="vs">
+        <img src="./img/15.jpg" alt="배너이미지" />
+      </figure>
+      <div class="tb_box">
+        <div class="tab on">버튼1</div>
+        <div class="tab">버튼2</div>
+        <div class="tab">버튼3</div>
+      </div>
+      <section class="page on">
+        <h2 class="page_tit">첫 페이지</h2>
+        <ul class="lst1">
+          <li class="col">
+            <a href="">
+              <img src="https://placehold.it/300x300/333" alt="" />
+              <h3 class="cate_tit">제품제목1</h3>
+              <p class="cate_com">제품에 대한 설명1</p>
+            </a>
+          </li>
+          <li class="col">
+            <a href="">
+              <img src="https://placehold.it/300x300/333" alt="" />
+              <h3 class="cate_tit">제품제목2</h3>
+              <p class="cate_com">제품에 대한 설명2</p>
+            </a>
+          </li>
+          <li class="col">
+            <a href="">
+              <img src="https://placehold.it/300x300/333" alt="" />
+              <h3 class="cate_tit">제품제목3</h3>
+              <p class="cate_com">제품에 대한 설명3</p>
+            </a>
+          </li>
+          <li class="col">
+            <a href="">
+              <img src="https://placehold.it/300x300/333" alt="" />
+              <h3 class="cate_tit">제품제목4</h3>
+              <p class="cate_com">제품에 대한 설명4</p>
+            </a>
+          </li>
+          <li class="col">
+            <a href="">
+              <img src="https://placehold.it/300x300/333" alt="" />
+              <h3 class="cate_tit">제품제목5</h3>
+              <p class="cate_com">제품에 대한 설명5</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page">
+        <h2 class="page_tit">두 번째 페이지</h2>
+        <ul class="lst1">
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목1</h3>
+              <p class="cate com">제품에 대한 설명1</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목2</h3>
+              <p class="cate com">제품에 대한 설명2</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목3</h3>
+              <p class="cate com">제품에 대한 설명3</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목4</h3>
+              <p class="cate com">제품에 대한 설명4</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목5</h3>
+              <p class="cate com">제품에 대한 설명5</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목6</h3>
+              <p class="cate com">제품에 대한 설명6</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page">
+        <h2 class="page_tit">세 번째 페이지</h2>
+        <ul class="lst1">
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목1</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목2</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목3</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목4</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목5</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="ft">
+      <p class="copyright">
+        서울시 동작구 신대방동 395-70 (보라매로5길 15) 전문건설회관 23층
+        우림FMG. <br />고객센터 : 02-3284-1300 <br />
+        Copyright ⓒ 2018 STONEHENgE Jewelry. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
