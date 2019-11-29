@@ -26,7 +26,8 @@ a {
   top: 0;
   left: 0;
   z-index: 90;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.417);
+  backdrop-filter: blur(20px);
 }
 .hd label {
   font-size: 30px;
@@ -61,17 +62,19 @@ a {
   left: -110%;
   top: 60px;
   min-height: 100%;
-  background-color: rgba(238, 238, 238, 0.932);
+  background-color: rgba(255, 255, 255, 0.479);
   z-index: 100;
   width: 100%;
   transition: 0.6s;
+  backdrop-filter: blur(10px);
 }
 #top {
   position: fixed;
   right: -110%;
   top: 60px;
   min-height: 100%;
-  background-color: rgba(238, 238, 238, 0.932);
+  background-color: #6bb9c942;
+  backdrop-filter: blur(8px);
   z-index: 100;
   width: 100%;
   transition: 0.6s;
