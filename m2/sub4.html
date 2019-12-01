@@ -44,7 +44,7 @@
     />
 
     <meta name="twitter:domain" content="http://stonehenge.co.kr/" />
-    <title>BRAND | STONEHENgE</title>
+    <title>ISSUE | STONEHENgE</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
@@ -97,27 +97,72 @@
         width: 95%;
         margin: 30px auto;
         box-shadow: 0px 0px 10px #333;
-        min-height: 500px;
+        min-height: 400px;
       }
       .lst1 li a {
         display: block;
         color: #333;
       }
+      .lst1 .col3 .cate_tit,
+      .lst1 .col3 .cate.com {
+        text-align: left;
+        margin-left: 5%;
+      }
       .lst1 li img {
         display: block;
-        padding-top: 5%;
+        width: 94%;
+        height: auto;
         margin: 20px auto;
+      }
+      .lst1 li img:hover {
+        opacity: 0.5;
+      }
+      .lst2 li {
+        display: block;
+        float: left;
       }
       .cate_tit {
         text-align: center;
-        line-height: 3;
-      }
-      .cate_com {
-        padding: 1.5rem;
-        text-align: center;
-        padding-bottom: 40px;
+        line-height: 2;
       }
 
+      .col2 .cate_tit {
+        text-align: center;
+        line-height: 1.5;
+        color: #333;
+      }
+      .lst2 {
+        clear: both;
+      }
+      .lst2 li {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        min-height: 300px;
+      }
+      .lst2 li:nth-child(2n + 1) {
+        clear: both;
+      }
+      .lst2 li a {
+        display: block;
+        color: #333;
+        text-align: center;
+      }
+      .lst2 li img {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 200px;
+        height: 220px;
+      }
+      .lst2 li img:hover {
+        opacity: 0.5;
+      }
+      .col2 .cate.com {
+        font-size: 14px;
+        padding: 4px;
+        text-align: center;
+        color: #666;
+      }
       .tb_box {
         clear: both;
         margin-top: 20px;
@@ -125,7 +170,7 @@
       }
       .tb_box .tab {
         float: left;
-        width: 33.333333%;
+        width: 50%;
         line-height: 32px;
         text-align: center;
         color: #333;
@@ -138,6 +183,24 @@
       .tb_box .tab.on {
         background-color: #6bbac9;
         color: #fff;
+      }
+      .col3 {
+        padding: 5%;
+      }
+      a.mom {
+        display: block;
+        margin-left: 5%;
+        margin-top: 2%;
+        text-align: center;
+        width: 130px;
+        padding: 4px;
+        font-size: 14px;
+        background-color: #6bbac9;
+        border: 1px solid #6bbac9;
+      }
+      a.mom:hover {
+        color: #6bbac9;
+        background: #fff;
       }
     </style>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
@@ -187,180 +250,147 @@
     </nav>
     <nav id="top">
       <ul class="menu">
-        <li><a href="login.html" rel="external">상단1</a></li>
-        <li><a href="join.html" rel="external">상단2</a></li>
-        <li><a href="contact.html" rel="external">상단3</a></li>
+        <li><a href="login.html" rel="external">LOGIN</a></li>
+        <li><a href="join.html" rel="external">JOIN</a></li>
+        <li><a href="contact.html" rel="external">CONTACT</a></li>
       </ul>
     </nav>
     <main class="content">
       <div class="blank">
         <div class="bread">
           <a href="index.html" class="home"><i class="xi-home"></i></a> &gt;
-          <span class="cur">BRAND</span>
+          <span class="cur">ISSUE</span>
         </div>
       </div>
       <figure class="vs">
-        <img src="./img/15.jpg" alt="배너이미지" />
+        <img src="./img/16.jpg" alt="배너이미지" />
       </figure>
       <div class="tb_box">
-        <div class="tab on">버튼1</div>
-        <div class="tab">버튼2</div>
-        <div class="tab">버튼3</div>
+        <div class="tab on">CELEBRITY</div>
+        <div class="tab">PPL</div>
       </div>
       <section class="page on">
-        <h2 class="page_tit">첫 페이지</h2>
-        <ul class="lst1">
-          <li class="col">
+        <ul class="lst2">
+          <li class="col2">
             <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목1</h3>
-              <p class="cate_com">제품에 대한 설명1</p>
+              <img src="./img/24.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">송혜교</h3>
+              <p class="cate com">tvN남자친구 <br />2019.02</p>
             </a>
           </li>
-          <li class="col">
+          <li class="col2">
             <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목2</h3>
-              <p class="cate_com">제품에 대한 설명2</p>
+              <img src="./img/25.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">기은세</h3>
+              <p class="cate com">KBS2 왜그래 풍상씨 <br />2019.02</p>
             </a>
           </li>
-          <li class="col">
+          <li class="col2">
             <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목3</h3>
-              <p class="cate_com">제품에 대한 설명3</p>
+              <img src="./img/26.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">화사</h3>
+              <p class="cate com">MBC 라디오스타 <br />2019.02</p>
             </a>
           </li>
-          <li class="col">
+          <li class="col2">
             <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목4</h3>
-              <p class="cate_com">제품에 대한 설명4</p>
+              <img src="./img/27.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">김소현</h3>
+              <p class="cate com">
+                인스타그램 <br />
+                2019.02
+              </p>
             </a>
           </li>
-          <li class="col">
+          <li class="col2">
             <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목5</h3>
-              <p class="cate_com">제품에 대한 설명5</p>
+              <img src="./img/28.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">유인나</h3>
+              <p class="cate com">MBC 섹션 TV 연예통신 <br />2019.02</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="./img/29.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">윤세아</h3>
+              <p class="cate com">JTBC SKY 캐슬 <br />2019.02</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="./img/30.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">김서형</h3>
+              <p class="cate com">JTBC SKY 캐슬 <br />2019.01</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="./img/31.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">엄현경</h3>
+              <p class="cate com">
+                네이버 TV대화장파티 <br />
+                2019.01
+              </p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="./img/32.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">한채영</h3>
+              <p class="cate com">MBC 신과의 약속 <br />2019.01</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="./img/33.jpg" alt="이슈 이미지" />
+              <h3 class="cate_tit">조보아</h3>
+              <p class="cate com">SBS 골목식당<br />2019.01</p>
             </a>
           </li>
         </ul>
       </section>
       <section class="page">
-        <h2 class="page_tit">두 번째 페이지</h2>
-        <ul class="lst1">
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목1</h3>
-              <p class="cate com">제품에 대한 설명1</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목2</h3>
-              <p class="cate com">제품에 대한 설명2</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목3</h3>
-              <p class="cate com">제품에 대한 설명3</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목4</h3>
-              <p class="cate com">제품에 대한 설명4</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목5</h3>
-              <p class="cate com">제품에 대한 설명5</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목6</h3>
-              <p class="cate com">제품에 대한 설명6</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="page">
-        <h2 class="page_tit">세 번째 페이지</h2>
+        <h2 class="page_tit">PPL</h2>
         <ul class="lst1">
           <li class="col3">
             <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목1</h3>
-                <p class="cate_com"></p>
-              </div>
+              <img src="./img/p1.jpg" alt="PPL이미지" />
+              <h3 class="cate_tit">tvN 진심이 닿다</h3>
+              <p class="cate com">
+                스톤헨지가 tvN 수목드라마 ‘진심이 닿다’와 함께합니다.
+              </p>
             </a>
+            <a href="" class="mom">DISCOVER MORE</a>
           </li>
           <li class="col3">
             <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목2</h3>
-                <p class="cate_com"></p>
-              </div>
+              <img src="./img/p2.jpg" alt="PPL이미지" />
+              <h3 class="cate_tit">tvN 김비서가 왜그럴까</h3>
+              <p class="cate com">
+                스톤헨지와 함께하는 tvN 수목 드라마 '김비서가 왜 그럴까'
+              </p>
             </a>
+            <a href="" class="mom">DISCOVER MORE</a>
           </li>
           <li class="col3">
             <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목3</h3>
-                <p class="cate_com"></p>
-              </div>
+              <img src="./img/p3.jpg" alt="PPL이미지" />
+              <h3 class="cate_tit">SBS 푸른 바다의 전설</h3>
+              <p class="cate com">
+                스톤헨지가 '푸른바다의 전설'과 함께 합니다.
+              </p>
             </a>
+            <a href="" class="mom">DISCOVER MORE</a>
           </li>
           <li class="col3">
             <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목4</h3>
-                <p class="cate_com"></p>
-              </div>
+              <img src="./img/p4.jpg" alt="PPL이미지" />
+              <h3 class="cate_tit">KBS 2TV 오 마이 비너스</h3>
+              <p class="cate com">
+                스톤헨지와 함께하는 KBS 2TV 월화 드라마 '오 마이 비너스'
+              </p>
             </a>
-          </li>
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목5</h3>
-                <p class="cate_com"></p>
-              </div>
-            </a>
+            <a href="" class="mom">DISCOVER MORE</a>
           </li>
         </ul>
       </section>
