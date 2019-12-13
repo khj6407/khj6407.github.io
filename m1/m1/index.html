@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <!-- 모바일에서 스크롤을 내리면 주소창이 숨겨지고, 스크롤을 올리면 주소창이 보이게 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script>
+    // 자바스크립트로 모바일 웹 주소창 숨기기
+    window.addEventListener('load', function() {
+      // body의 height를 살짝 늘리는 코드
+      document.body.style.height = (document.documentElement.clientHeight + 5) + 'px';
+      // scroll를 제어 하는 코드
+      setTimeout(function(){ window.scrollTo(0, 1); }, 100); 
+    });
+    </script>
+    <meta name="author" content="kim">
+    <meta name="keywords" content="검색어,,,">
+    <meta name="description" content="">
+    <meta property="fb:app_id" content="페이스북의 앱아이디">
+    <meta property="og:site_name" content="사이트나 앱이름">
+    <meta property="og:title" content="사이트 제목">
+    <meta property="og:description" content="사이트 설명">
+    <meta property="og:url" content="도메인네임을비롯한사이트주소">
+    <meta property="og:image" content="이미지주소">
+    <meta property="twitter:card" content="summary 앱이나 사이트의 요약">
+    <meta property="twitter:title" content="사이트의 제목">
+    <meta property="twitter:description" content="사이트의 설명">
+    <meta property="twitter:image" content="사이트의 썸네일이미지 주소">
+    <link rel="shortcut icon" href="파비콘주소" type="image/x-icon">
+    <title>모바일 사이트나 앱의 제목</title>
+    <style>
+    * { margin: 0; padding: 0; }  
+    body, html { width: 100%; }
+    ul { list-style: none; }
+    a { text-decoration: none; }        
+    button, label, input { outline:0; border:0; background-color:transparent; } button, label, input, a { user-select:none; } 
+    
+    .none_item { display:none; }    
+    #hd { position:fixed; left: 0; top: 0; z-index:900; width:100vw; height: 60px; overflow:hidden; background-color:#333; border-bottom:1px solid #111; }  
+    .logo { display:block; width: 160px; height: 60px; margin:0 auto; }    
+    .lst_btn { display:block; width: 60px; height: 60px; cursor:pointer;
+        background-color:#fff; position:absolute; right:0; top:0; }
+    .lst_btn span { display:block; }
+    .line_box { width: 60px; height: 60px; position:relative; cursor:pointer; }
+    .line_box span { position:absolute; width: 30px; height:3px; left: 15px; 
+        background-color:#333; } 
+    .line_box span.ln1 { top:18px; }    
+    .line_box span.ln2 { top:28px; }        
+    .line_box span.ln3 { top:38px; } 
+        
+    #ck1:checked ~ #hd .line_box span.ln1 { transform:rotate(45deg); top:28px; }
+    #ck1:checked ~ #hd .line_box span.ln2 { opacity:0; }    
+    #ck1:checked ~ #hd .line_box span.ln3 { transform:rotate(-45deg); top:28px; }    
+    #gnb { width: 240px; height:100vh; position:fixed; left:-250px; top: 0; 
+        transition:0.6s; background:#333; overflow:hidden; z-index:910; }
+    #ck1:checked ~ #gnb { left:0; } 
+    .gnb_tit { text-align:center; color:#fff; line-height: 3; padding-top: 1rem;
+        border-bottom:1px solid #555; }    
+    .thumb_menu { clear:both; }    
+    .thumb_menu li { float:left; }    
+    .thumb_menu li a, .thumb_menu li label { display:block; width: 50px; height: 50px; line-height: 50px; text-align:center; color:#fff; }    
+    .menu { clear:both; }
+    .menu li { clear:both; }    
+    .menu li a { display:block; line-height: 52px; height: 52px; border-top:1px solid #555; border-bottom:1px solid #111; text-indent:14px; color:#fff; }    
+        
+    #search, #login { width: 100vw; height: 100vh; position:fixed; top:-100vh; left: 0; background:#333; color:#fff; font-size:18px; text-align:center; z-index:920; transition:0.6s; }
+    #ck2:checked ~ #search { top: 0; }    
+    #ck3:checked ~ #login { top: 0; }        
+        
+    .page { clear:both; min-height:100vh;  width:100vw; }
+    .page:after { content:""; display:table; } 
+    .page_tit { padding-top: 60px; line-height:4; color:#fff; text-shadow:1px 1px 10px #333; text-align:center; font-size:1.1rem; }    
+    #vs { background-color:gold; }
+    #page1 { background-color:#1c8; }    
+    #page2 { background-color:deeppink;}
+    #page3 { background-color:navy; }
+    #page4 { background-color:orange; }    
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#gnb .menu li a").click(function(){
+            var tar = parseInt($(this).attr("data-index"));
+            var ofs = $("#page"+tar).offset();
+            var sc = ofs.top;
+            $("body, html").animate({scrollTop:sc}, 500);
+            $("#ck1").prop("checked",false);
+        });
+    });    
+    </script>
+</head>
+<body>
+<input type="checkbox" id="ck1" class="none_item">
+<input type="checkbox" id="ck2" class="none_item">
+<input type="checkbox" id="ck3" class="none_item">
+<header id="hd">
+    <a href="index.html" class="logo"><img src="https://placehold.it/160x60" alt=""></a>   
+    <label for="ck1" class="lst_btn">
+        <span class="line_box">
+            <span class="ln1"></span>
+            <span class="ln2"></span>
+            <span class="ln3"></span>
+        </span>       
+    </label> 
+</header>
+<nav id="gnb">
+    <h2 class="gnb_tit">메뉴</h2>
+    <ul class="thumb_menu">
+        <li><a href="index.html" class="lang">언어</a></li>
+        <li><label for="ck2" class="search_call">검색</label></li>
+        <li><label for="ck3" class="log_call">로그인</label></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="javascript:;" data-index="1">메뉴1</a></li>
+        <li><a href="javascript:;" data-index="2">메뉴2</a></li>
+        <li><a href="javascript:;" data-index="3">메뉴3</a></li>
+        <li><a href="javascript:;" data-index="4">메뉴4</a></li>
+    </ul>
+</nav>
+<div id="search">
+    <label for="ck2" class="close_btn">닫기</label>
+    <form action="" id="search_form">
+        <h1>여기는 검색 폼입니다.</h1>
+    </form>
+</div>
+<div id="login">
+    <label for="ck3" class="close_btn">닫기</label>
+    <form action="" id="login_form">
+        <h1>여기는 로그인 폼입니다.</h1>
+    </form>
+</div>
+<figure id="vs" class="page">
+    <ul class="img_box">
+        <li class="item1">
+            <div class="bg_box">
+                <h2 class="vs_tit"></h2>
+                <p class="vs_com"></p>
+                <a href="" class="more"></a>
+            </div>
+        </li>
+        <li class="item2">
+            <div class="bg_box">
+                <h2 class="vs_tit"></h2>
+                <p class="vs_com"></p>
+                <a href="" class="more"></a>
+            </div>
+        </li>
+        <li class="item3">
+            <div class="bg_box">
+                <h2 class="vs_tit"></h2>
+                <p class="vs_com"></p>
+                <a href="" class="more"></a>
+            </div>
+        </li>
+        <li class="item4">
+            <div class="bg_box">
+                <h2 class="vs_tit"></h2>
+                <p class="vs_com"></p>
+                <a href="" class="more"></a>
+            </div>
+        </li>
+    </ul>
+</figure>
+<main class="page" id="page1">
+    <h2 class="page_tit">여기는 첫 번째 페이지입니다.</h2>
+</main>
+<main class="page" id="page2">
+    <h2 class="page_tit">여기는 두 번째 페이지입니다.</h2>
+</main>
+<main class="page" id="page3">
+    <h2 class="page_tit">여기는 세 번째 페이지입니다.</h2>
+</main>
+<main class="page" id="page4">
+    <h2 class="page_tit">여기는 네 번째 페이지입니다.</h2>
+</main>
+</body>
+</html>

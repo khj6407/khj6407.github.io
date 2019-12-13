@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      ul {
+        list-style: none;
+      }
+      body,
+      html {
+        width: 100%;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      $(document).ready(function() {
+        $("#gnb .menu li a").click(function() {
+          var tar = parseInt($(this).attr("data-index"));
+          var ofs = $("page" + tar).offset();
+          var sc = ofs.top;
+          $("body, html").animate({ scrollTop: sc }, 500);
+          $("#ck1").prop("checked", false);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" id="ck1" class="none_item" />
+    <input type="checkbox" id="ck2" class="none_item" />
+    <input type="checkbox" id="ck3" class="none_item" />
+    <header id="id">
+      <a href="index.html" class="logo">
+        <img src="./img/logo60.png" alt="로고" />
+      </a>
+      <label for="ck1" class="lst_btn">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </label>
+    </header>
+    <nav id="gnb">
+      <h2 class="gnb_tit">메뉴</h2>
+      <ul class="thumb_menu">
+        <li><a href="index.html" class="lang">언어</a></li>
+        <li><label for="ck2" class="search_call">검색</label></li>
+        <li><label for="ck3" class="log_call">로그인</label></li>
+      </ul>
+      <ul class="menu">
+        <li><a href="javascript:;" data-index="1">메뉴1</a></li>
+        <li><a href="javascript:;" data-index="2">메뉴2</a></li>
+        <li><a href="javascript:;" data-index="3">메뉴3</a></li>
+        <li><a href="javascript:;" data-index="4">메뉴4</a></li>
+      </ul>
+    </nav>
+    <div id="search">
+      <label for="ck2" class="close_btn">닫기</label>
+      <form action="" id="search_form">
+        <h1>여기는 검색입니다.</h1>
+      </form>
+    </div>
+    <div id="login">
+      <label for="ck3" class="close_btn">닫기</label>
+      <form action="" id="login_form">
+        <h1>여기는 로그인입니다.</h1>
+      </form>
+    </div>
+  </body>
+</html>
