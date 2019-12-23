@@ -44,7 +44,7 @@ $(function() {
     } else {
       $("#quick a").removeClass("on");
       $("#quick a.pageMove")
-        .eq(cnt + 1)
+        .eq(cnt)
         .addClass("on");
     }
     if ($(window).scrollTop() <= win_h - 1) {
