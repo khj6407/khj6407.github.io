@@ -1,0 +1,85 @@
+@charset "utf-8";
+.hd {
+  height: 50px;
+}
+.ft {
+  background-color: rgb(202, 202, 202);
+  height: 130px;
+}
+.copyright {
+  padding-top: 18px;
+  line-height: 30px;
+  font-size: 16px;
+}
+.mo {
+  display: block;
+}
+.desk {
+  display: none;
+}
+#menu_call ~ .wrap {
+  width: 320px;
+  margin: 0 auto;
+}
+.item_tit {
+  font-size: 18px;
+  color: #000;
+}
+.item_com {
+  font-size: 14px;
+  color: #000;
+}
+.sns {
+  display: block;
+  float: right;
+  clear: both;
+  margin-right: 3%;
+  margin-top: 8%;
+}
+
+.face {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+  background-image: url("../img/face.png");
+}
+.insta {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-top: 15px;
+  background-size: contain;
+  background-image: url("../img/insta.png");
+}
+.naver {
+  display: block;
+  width: 35px;
+  height: 35px;
+  margin-top: 15px;
+  background-size: cover;
+  background-image: url("../img/naver.png");
+}
+.more {
+  display: block;
+  width: 60px;
+  border-radius: 20px;
+  height: 20px;
+  border: 1px solid #333;
+  background: rgb(255, 255, 255);
+  font-size: 14px;
+  text-align: center;
+  animation: more 5s linear infinite;
+  margin-bottom: 10px;
+}
+@keyframes more {
+  0% {
+    border: 2px solid #333;
+    background: rgb(255, 255, 255);
+  }
+  100% {
+    border: 2px solid #fff;
+    background: #333;
+    color: #fff;
+  }
+}

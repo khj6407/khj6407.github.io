@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>영풍문고</title>
+    <script
+      type="text/javascript"
+      async=""
+      src="https://www.google-analytics.com/analytics.js"
+    ></script>
+    <!-- 폰트 링크 연결 -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/earlyaccess/notosanskr.css"
+    />
+    <!-- 아이콘 폰트 링크 -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="영풍문고 - 서점다운 서점" />
+    <meta
+      property="og:description"
+      content="인터넷 대형서점, 베스트셀러, 국내도서, 외국도서, 독자서평"
+    />
+    <meta property="og:url" content="http://www.ypbooks.co.kr" />
+    <meta name="author" content="영풍문고" />
+    <meta
+      name="description"
+      content="인터넷 대형서점, 베스트셀러, 국내도서, 외국도서, 독자서평"
+    />
+    <meta
+      name="Keywords"
+      content="영풍문고, 책, 도서, 인터넷 최초 온라인 서점, 온라인서점, 서점, 인터넷서점, 인터넷 도서"
+    />
+    <meta name="title" content="영풍문고" />
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="imagetoolbar" content="false" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <style>
+      @import url(./css/default.css);
+      @import url(./css/mobile2.css) screen and (max-width: 767px);
+      @import url(./css/tablet2.css) screen and (max-width: 950px) and
+        (min-width: 768px);
+      @import url(./css/desktop2.css) screen and (min-width: 951px);
+    </style>
+    <script>
+      $(document).ready(function() {
+        $(".tb_box .tab").click(function(index) {
+          var tar = $(this).index();
+          $(".page")
+            .eq(tar)
+            .addClass("on");
+          $(".page")
+            .eq(tar)
+            .siblings()
+            .removeClass("on");
+          $(this).addClass("on");
+          $(this)
+            .siblings()
+            .removeClass("on");
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        //메뉴의 스크롤 모션
+        $("body").scroll(function() {
+          //스크롤 했을 때의 scroll이벤트
+          var sct = $("body").scrollTop(); //스크롤 할 때마다 스크롤량 계산
+          if (sct >= 100) {
+            //500px이상 스크롤 하면
+            $(".maintext")
+              .not(":animated")
+              .fadeOut(800); //보이게 함
+            $(".home").addClass("on1");
+            $(".f30").addClass("on");
+          } else if (sct >= 100) {
+            //100px이상 스크롤하면
+          } else {
+            //500px 미만 스크롤 하면
+            $(".maintext")
+              .not(":animated")
+              .fadeIn(800); //보이게 함
+            $(".home").removeClass("on1");
+            $(".f30").removeClass("on");
+          }
+        });
+        $(".top").click(function() {
+          $("body, html").animate({ scrollTop: "0px" }, 700);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <input type="checkbox" id="menu_call" class="ck" />
+    <header class="mo hd">
+      <a href="" class="home"><img src="./img/mlogo.png" alt=""/></a>
+      <label for="menu_call" class="lst">
+        <i class="fas fa-book f30"></i><i class="fas fa-book-open f30"></i>
+      </label>
+    </header>
+    <div id="collap_menu">
+      <ul class="menu">
+        <li><a href="">베스트도서</a></li>
+        <li><a href="">신간도서</a></li>
+        <li><a href="">국내도서</a></li>
+        <li><a href="">외국도서</a></li>
+        <li><a href="">웹툰/웹소설</a></li>
+        <li><a href="">이벤트</a></li>
+      </ul>
+      <ul class="sns">
+        <li><a href="https://www.facebook.com/eypbooks" class="face"></a></li>
+        <li><a href="https://www.instagram.com/ypbooks/" class="insta"></a></li>
+        <li><a href="https://blog.naver.com/ypbookstore" class="naver"></a></li>
+      </ul>
+    </div>
+
+    <main class="con">
+      <figure class="vs">
+        <img src="./img/banner.png" alt="배너이미지" class="banner" />
+      </figure>
+      <div class="maintext">
+        <h1 class="text1">
+          Y&nbsp;O&nbsp;U&nbsp;N&nbsp;G
+          &nbsp;&nbsp;P&nbsp;O&nbsp;O&nbsp;N&nbsp;G
+        </h1>
+        <h1 class="text2">B&nbsp;O&nbsp;O&nbsp;K&nbsp;S</h1>
+      </div>
+
+      <div class="tb_box">
+        <div class="tab on">추천도서1</div>
+        <div class="tab">화제의 책</div>
+        <div class="tab">만화</div>
+      </div>
+      <section class="page on">
+        <ul class="lst1">
+          <li class="col">
+            <a href="">
+              <div class="more">MORE</div>
+              <img src="./img/b1.jpg" alt="" />
+              <h3 class="cate_tit">오늘도 펭수 내일도 펭수</h3>
+              <p class="cate_com">15,300</p>
+            </a>
+          </li>
+          <li class="col">
+            <a href="">
+              <div class="more">MORE</div>
+              <img src="./img/b2.jpg" alt="" />
+              <h3 class="cate_tit">양사나이의 크리스마스</h3>
+              <p class="cate_com">제품에 대한 설명2</p>
+            </a>
+          </li>
+          <li class="col">
+            <a href="">
+              <div class="more">MORE</div>
+              <img src="./img/b3.jpg" alt="" />
+              <h3 class="cate_tit">환절기에 온 편지</h3>
+              <p class="cate_com">제품에 대한 설명3</p>
+            </a>
+          </li>
+          <li class="col">
+            <a href="">
+              <div class="more">MORE</div>
+              <img src="./img/b4.jpg" alt="" />
+              <h3 class="cate_tit">언어의 온도</h3>
+              <p class="cate_com">제품에 대한 설명4</p>
+            </a>
+          </li>
+          <li class="col">
+            <a href="">
+              <div class="more">MORE</div>
+              <img src="./img/b5.jpg" alt="" />
+              <h3 class="cate_tit">
+                런던의 아침에 <br />
+                태양의 꽃을 장식하다
+              </h3>
+              <p class="cate_com">제품에 대한 설명5</p>
+            </a>
+          </li>
+          <li class="col">
+            <a href="">
+              <div class="more">MORE</div>
+              <img src="./img/b6.jpg" alt="" />
+              <h3 class="cate_tit">
+                대한민국 부동산 <br />
+                어떻게 흘러갈 것인가
+              </h3>
+              <p class="cate_com">제품에 대한 설명5</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page">
+        <ul class="lst1">
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목1</h3>
+              <p class="cate com">제품에 대한 설명1</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목2</h3>
+              <p class="cate com">제품에 대한 설명2</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목3</h3>
+              <p class="cate com">제품에 대한 설명3</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목4</h3>
+              <p class="cate com">제품에 대한 설명4</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목5</h3>
+              <p class="cate com">제품에 대한 설명5</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="">
+              <img src="https://placehold.it/300x300/26d" alt="" />
+              <h3 class="cate_tit">제품제목6</h3>
+              <p class="cate com">제품에 대한 설명6</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="page">
+        <ul class="lst1">
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목1</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목2</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목3</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목4</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+          <li class="col3">
+            <a href="">
+              <img
+                src="https://placehold.it/300x300/2c8"
+                alt=""
+                class="thumb"
+              />
+              <div class="tit_box">
+                <h3 class="cate_tit">제품제목5</h3>
+                <p class="cate_com"></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="ft">
+      <div class="ftlogo"></div>
+      <div class="copyright">
+        회사명 : (주)영풍문고 ㅣ대표이사 : 최영일소재지 : 서울특별시 강남구
+        강남대로 542번지 (우)06110사업자 등록번호 : 102-81-30788 ㅣ 통신판매업
+        신고번호 : 강남-05859 [ 사업자정보확인 ]개인정보관리 책임자 : 김현일 ㅣ
+        E-mail : customer@ypbooks.co.krCOPYRIGHT © YOUNGPOONG BOOKSTORE INC. ALL
+        RIGHTS RESERVED.
+      </div>
+    </footer>
+  </body>
+</html>
