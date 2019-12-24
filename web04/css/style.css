@@ -253,7 +253,7 @@ button:focus {
 }
 
 .new-btn-d::after {
-  background: #b6d0fd;
+  background: #468aff;
 }
 .new-btn-d:hover::after {
   -webkit-transition-delay: 0.175s;
@@ -274,7 +274,7 @@ button:focus {
   cursor: pointer;
 }
 .mail-b:hover {
-  color: #b6d0fd;
+  color: #186fa5;
 }
 
 .right-top {
@@ -292,7 +292,7 @@ button:focus {
   padding: 0px 20px;
 }
 .right-top ul li a:hover {
-  background: #b6d0fd;
+  background: #186fa5;
   color: #ffffff;
 }
 
@@ -330,7 +330,7 @@ button:focus {
 }
 
 .top-header .navbar .navbar-collapse ul li a.active {
-  background: #b6d0fd;
+  background: #186fa5;
   color: #ffffff;
   -webkit-transition: all 0.5s ease-in-out 0s;
   -moz-transition: all 0.5s ease-in-out 0s;
@@ -363,7 +363,7 @@ button:focus {
   transition: all 0.5s ease-in-out 0s;
 }
 .top-header .navbar .navbar-collapse ul li a:hover {
-  background: #b6d0fd;
+  background: #186fa5;
   color: #ffffff;
 }
 
@@ -411,11 +411,11 @@ button:focus {
 }
 
 .navbar-toggler:hover {
-  border: 1px solid #b6d0fd;
+  border: 1px solid #186fa5;
 }
 
 .navbar-toggler:hover span {
-  background: #b6d0fd;
+  background: #186fa5;
 }
 
 /*------------------------------------------------------------------
@@ -487,7 +487,7 @@ button:focus {
   z-index: 3;
 }
 .lbox-details p strong {
-  color: #b6d0fd;
+  color: #186fa5;
   font-size: 40px;
   font-family: "Catamaran", sans-serif;
 }
@@ -504,7 +504,7 @@ button:focus {
   z-index: 3;
 }
 .lbox-details a.btn:hover {
-  background: #b6d0fd;
+  background: #186fa5;
   color: #ffffff;
 }
 
@@ -515,7 +515,7 @@ button:focus {
 .tooltip-1 {
   display: inline-block;
   position: relative;
-  color: #b6d0fd;
+  color: #186fa5;
   opacity: 1;
 }
 
@@ -570,7 +570,7 @@ button:focus {
 }
 
 .title-box h2 span {
-  color: #b6d0fd;
+  color: #186fa5;
   text-decoration: underline;
 }
 .about-main-info h2 {
@@ -578,7 +578,7 @@ button:focus {
   font-family: "Catamaran", sans-serif;
 }
 .about-main-info h2 span {
-  color: #b6d0fd;
+  color: #186fa5;
   text-decoration: underline;
 }
 .about-main-info {
@@ -586,7 +586,7 @@ button:focus {
 }
 
 .about-m {
-  border: 2px solid #b6d0fd;
+  border: 2px solid #186fa5;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 40, 0.2);
 }
 
@@ -738,7 +738,7 @@ button:focus {
   transition: all 0.3s ease 0s;
 }
 .serviceBox:hover {
-  border-color: #b6d0fd;
+  border-color: #186fa5;
 }
 .serviceBox:before {
   content: "";
@@ -751,7 +751,7 @@ button:focus {
   transition: all 0.3s ease 0s;
 }
 .serviceBox:hover:before {
-  border-top-color: #b6d0fd;
+  border-top-color: #186fa5;
 }
 .serviceBox .service-icon {
   display: inline-block;
@@ -782,8 +782,8 @@ button:focus {
   transition: all 0.3s ease 0s;
 }
 .serviceBox:hover .service-icon:before {
-  border-color: #b6d0fd;
-  background: #b6d0fd;
+  border-color: #186fa5;
+  background: #186fa5;
 }
 .serviceBox .title {
   font-size: 20px;
@@ -848,7 +848,7 @@ button:focus {
   margin: 0 10px;
 }
 .services-box .owl-carousel .owl-nav .owl-prev:hover {
-  background: #b6d0fd;
+  background: #186fa5;
   color: #ffffff;
 }
 .services-box .owl-carousel .owl-nav .owl-next {
@@ -865,7 +865,7 @@ button:focus {
   margin: 0 10px;
 }
 .services-box .owl-carousel .owl-nav .owl-next:hover {
-  background: #b6d0fd;
+  background: #186fa5;
   color: #ffffff;
 }
 
@@ -894,8 +894,8 @@ button:focus {
   min-height: 50px;
   padding: 0px 15px;
   border-radius: 0;
-  color: #12557f;
-  border: 1px solid #12557f;
+  color: #fff;
+  border: 1px solid #aed7f0;
 }
 .well-block form .form-group .form-control:focus {
   box-shadow: none;
@@ -907,7 +907,7 @@ button:focus {
   letter-spacing: 1px;
   padding: 10px 18px;
   background: #ffffff;
-  color: #12557f;
+  color: #aed7f0;
   display: inline-block;
   line-height: 24px;
   cursor: pointer;
@@ -967,14 +967,14 @@ button:focus {
   transition: all 0.6s ease 0.3s;
 }
 .box-gallery .box-content:before {
-  border-left: 2px solid #b6d0fd;
-  border-top: 2px solid #b6d0fd;
+  border-left: 2px solid #186fa5;
+  border-top: 2px solid #186fa5;
   top: 19px;
   left: 19px;
 }
 .box-gallery .box-content:after {
-  border-bottom: 2px solid #b6d0fd;
-  border-right: 2px solid #b6d0fd;
+  border-bottom: 2px solid #186fa5;
+  border-right: 2px solid #186fa5;
   bottom: 19px;
   right: 19px;
 }
@@ -1001,7 +1001,7 @@ button:focus {
   content: "";
   width: 0;
   height: 2px;
-  background: #b6d0fd;
+  background: #186fa5;
   position: absolute;
   bottom: -8px;
   left: 0;
@@ -1045,7 +1045,7 @@ button:focus {
   transition: all 0.3s ease-in-out 0s;
 }
 .box-gallery .icon li a:hover {
-  background: #b6d0fd;
+  background: #186fa5;
   color: #fff;
 }
 @media only screen and (max-width: 990px) {
@@ -1089,7 +1089,7 @@ button:focus {
 .our-team .pic {
   margin: 8px;
   position: relative;
-  border: 3px solid #b6d0fd;
+  border: 3px solid #186fa5;
   transition: all 0.5s ease 0s;
 }
 .our-team:hover .pic {
@@ -1099,7 +1099,7 @@ button:focus {
   content: "";
   width: 100%;
   height: 0;
-  background: #b6d0fd;
+  background: #186fa5;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1232,9 +1232,9 @@ button:focus {
 }
 .blog-inner .item-meta span {
   color: #ffffff;
-  background: #b6d0fd;
+  background: #5c9fc9;
   display: inline-block;
-  padding: 5px;
+  padding: 3px 7px;
 }
 
 .blog-inner h2 {
@@ -1272,7 +1272,7 @@ button:focus {
   font-size: 40px;
   border: 2px dotted #12557f;
   margin-right: 10px;
-  color: #b6d0fd;
+  color: #186fa5;
   border-radius: 50%;
 }
 
@@ -1294,14 +1294,14 @@ button:focus {
   color: #333333;
 }
 .dit-right a:hover {
-  color: #b6d0fd;
+  color: #186fa5;
 }
 
 .contact-block {
 }
 
 .contact-block .form-group .form-control {
-  background: #b6d0fd;
+  background: #d4e9f6;
   height: 45px;
   font-size: 16px;
   border: 0;
@@ -1322,7 +1322,7 @@ button:focus {
 }
 
 .submit-button .btn-common {
-  background-color: #b6d0fd;
+  background-color: #115a88;
   height: 45px;
   line-height: 45px;
   font-size: 16px;
@@ -1340,7 +1340,7 @@ button:focus {
   transition: all 0.3s;
 }
 .submit-button .btn-common:hover {
-  background-color: #528780;
+  background-color: #4990bd;
 }
 
 .custom-select {
@@ -1367,7 +1367,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-box .footer-company-name a {
-  color: #b6d0fd;
+  color: #186fa5;
 }
 .footer-box .footer-company-name a:hover {
   color: #000000;
