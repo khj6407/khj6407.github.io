@@ -182,7 +182,7 @@ a,
 .lead {
     font-size: 18px;
     line-height: 30px;
-    color: #767676;
+    color: #313131;
     margin: 0;
     padding: 0;
 }
@@ -784,7 +784,7 @@ li.social-links a {
 .testimonial small,
 .testimonial .lead {
     background-color: transparent;
-    color: #aaa;
+    color: rgb(34, 34, 34);
     display: block;
     font-size: 16px;
     font-style: italic;
@@ -1106,7 +1106,7 @@ li.social-links a {
     padding-top: 10px;
     font-size: 19px;
     font-style: italic;
-    color: #999;
+    color: rgb(66, 66, 66);
     padding-bottom: 0;
 }
 
