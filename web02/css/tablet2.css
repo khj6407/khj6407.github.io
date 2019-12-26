@@ -70,8 +70,12 @@
   width: 90%;
   margin: 30px auto;
   background: #c2f0dd86;
-  min-height: 800px;
   display: none;
+}
+.page::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .more {
   display: block;
@@ -118,4 +122,21 @@
   text-align: center;
   margin-top: 10px;
   color: #002717;
+}
+
+.tb_box {
+  clear: both;
+  margin-top: 50px;
+  padding-top: 30px;
+  margin-left: 5%;
+}
+.tb_box .tab {
+  float: left;
+  width: 31.633%;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  background: #ffffff86;
+  cursor: pointer;
 }

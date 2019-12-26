@@ -11,7 +11,8 @@
   background-color: rgb(202, 202, 202);
   height: 160px;
 }
-.copyright {
+.copyright,
+.copyright1 {
   line-height: 25px;
   font-size: 12px;
 }
@@ -22,6 +23,7 @@
   background-image: url("../img/mlogo.png");
   background-size: cover;
   float: left;
+  margin: 6%;
 }
 .mo {
   display: block;
@@ -29,7 +31,7 @@
 #collap_menu {
   position: fixed;
   left: -110vw;
-  top: 8%;
+  top: 9%;
   z-index: 888;
   transition: 0.5s;
   height: 100vh;
@@ -52,12 +54,11 @@
 .lst1 {
   clear: both;
   padding-top: 30px;
-  margin-left: 5%;
 }
 .lst1 li {
   float: left;
-  margin: 10px;
-  margin-left: 2%;
+  margin-top: 10px;
+  margin-left: 4%;
 }
 .lst1 li a {
   display: block;
@@ -75,7 +76,6 @@
   width: 100%;
   margin: 30px auto;
   background: #c2f0dd86;
-  min-height: 1000px;
   display: none;
 }
 .lst1 li a {
@@ -85,7 +85,7 @@
 
 .cate_tit {
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 2;
 }
 .cate_com {
@@ -224,4 +224,10 @@
 .f30.on {
   font-size: 24px;
   color: rgba(0, 53, 0, 0.623);
+}
+.copyright {
+  display: none;
+}
+.copyright1 {
+  display: block;
 }

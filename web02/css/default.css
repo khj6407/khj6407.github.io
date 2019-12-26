@@ -41,7 +41,6 @@ input {
   clear: both;
 }
 .con {
-  min-height: 500px;
   padding: 28px;
 }
 .hd,
@@ -275,7 +274,11 @@ header {
   padding-left: 5%;
   line-height: 3;
 }
-
+.page::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .lst1 {
   clear: both;
   padding-top: 30px;
@@ -305,7 +308,6 @@ header {
   width: 80%;
   margin: 30px auto;
   background: #c2f0dd86;
-  min-height: 460px;
   display: none;
 }
 .lst1 li a {
@@ -370,4 +372,7 @@ header {
   text-align: center;
   margin-top: 10px;
   color: #002717;
+}
+.copyright1 {
+  display: none;
 }
