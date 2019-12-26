@@ -21,17 +21,17 @@
       name="description"
       content="스톤헨지 주얼리는 ‘Beautiful Moments’라는 슬로건 아래 클래식하고 우아한 브랜드 이미지를 선보입니다."
     />
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Brand | STONEHENgE" />
     <meta
       property="og:description"
       content="스톤헨지 주얼리는 ‘Beautiful Moments’라는 슬로건 아래 클래식하고 우아한 브랜드 이미지를 선보입니다."
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+
     <meta property="og:image" content="http://stonehenge.co.kr/img/logo3.png" />
     <meta property="og:url" content="http://stonehenge.co.kr/" />
 
@@ -48,7 +48,7 @@
     />
 
     <meta name="twitter:domain" content="http://stonehenge.co.kr/" />
-    <title>STORE | STONEHENgE</title>
+    <title>LOGIN | STONEHENgE</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
@@ -145,6 +145,74 @@
         background-color: #6bbac9;
         color: #fff;
       }
+      .container {
+        padding-top: 56px;
+        margin: 0 auto;
+      }
+      .tcen {
+        text-align: center;
+      }
+      .desP {
+        margin: 25px;
+        font-size: 12px;
+        color: #858585;
+        text-align: center;
+      }
+      .loginWrap input {
+        width: 320px;
+        margin: 6px 20px;
+        padding: 4px;
+        border: 1px solid #dfdfdf;
+        height: 30px;
+      }
+      .logcheckBox {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+      }
+      .loginBtnWrap {
+        width: 330px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin: 10px auto;
+        border-radius: 6px;
+        background-color: #6bbac9;
+      }
+      .loginBtnWrap a {
+        color: #fff;
+        font-size: 14px;
+      }
+      .threeline {
+        clear: both;
+        display: flex;
+        justify-content: center;
+      }
+      .threeline li {
+        clear: both;
+        margin-right: 10px;
+        width: 100px;
+        border-bottom: 2px solid #6bbac9;
+        text-align: center;
+        height: 30px;
+        line-height: 30px;
+      }
+      .threeline li a {
+        display: block;
+        font-size: 14px;
+        color: #333;
+      }
+      .otherLog img {
+        width: 40px;
+        height: 40px;
+      }
+      .otherLog {
+        display: flex;
+        margin: 20px 10px;
+        justify-content: center;
+        align-content: center;
+        font-size: 13px;
+      }
     </style>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script>
@@ -201,32 +269,76 @@
       <div class="blank">
         <div class="bread">
           <a href="index.html" class="home"><i class="xi-home"></i></a> &gt;
-          <span class="cur"
-            ><a href="sub1.html">BRAND</a> &gt; BEAUTIFUL MOMENTS
+          <span class="cur">
+            <a href="login.html">LOGIN</a>
           </span>
         </div>
       </div>
-      <section class="page on">
-        <h2 class="page_tit">STONEHENgE_뷰티풀모먼츠 #BeginAgain</h2>
-        <ul class="lst1">
-          <li class="col">
-            <p class="cate_com">
-              한 해의 끝자락, 새로운 시작을 기대하며 #BeginAgain 여러분의 한
-              해는 어떠한 기억들로 채워져 있나요?
-            </p>
-          </li>
-        </ul>
-      </section>
-      <figure class="vs">
-        <iframe
-          width="613"
-          height="375"
-          src="https://www.youtube.com/embed/sX17svOGLDc"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </figure>
+      <div class="container">
+        <div class="loginBox">
+          <h2 class="cosTitle tcen">로그인</h2>
+          <p class="desP">
+            회원가입 시 등록하신 이메일과 비밀번호를 입력해주세요.<br />
+            우림FMG 통합 아이디로 FAMILY 사이트의 모든 서비스를 안전하게
+            이용하실 수 있습니다.
+          </p>
+          <div class="loginWrap">
+            <input
+              onkeyup="enterkey();"
+              type="text"
+              id="log_id"
+              name="log_id"
+              value=""
+              placeholder="아아디 or 이메일"
+            />
+            <input
+              onkeyup="enterkey();"
+              type="password"
+              id="log_pw"
+              name="log_pw"
+              placeholder="비밀번호"
+            />
+          </div>
+          <div class="logcheckBox">
+            <label
+              ><input
+                type="checkbox"
+                id="log_state"
+                style="margin-right:5px;"
+              />로그인 상태유지</label
+            >
+          </div>
+          <div class="loginBtnWrap">
+            <a class="btn1 login" type="button">로그인</a>
+          </div>
+          <ul class="payBtnWrap threeline">
+            <li>
+              <a class="btn2" href="">회원가입</a>
+            </li>
+            <li>
+              <a class="btn2" href="">아이디 찾기</a>
+            </li>
+            <li>
+              <a class="btn2" href="">비밀번호 찾기</a>
+            </li>
+          </ul>
+
+          <!-- 로그인 api -->
+          <div class="otherLog">
+            <div class="naver login">
+              <a id="naverIdLogin" target="_blank">
+                <img src="./img/naver.png" alt="네이버" />
+              </a>
+            </div>
+            <a class="facebook login" onclick="fb_login()">
+              <img src="./img/face.jpg" alt="페이스북" />
+            </a>
+            <a class="kakao login" onclick="kakao_login()">
+              <img src="./img/kakao.jpg" alt="카카오"
+            /></a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="ft">
       <p class="copyright">

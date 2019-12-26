@@ -20,14 +20,18 @@
       name="description"
       content="스톤헨지 주얼리는 ‘Beautiful Moments’라는 슬로건 아래 클래식하고 우아한 브랜드 이미지를 선보입니다."
     />
-
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/favicon.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Brand | STONEHENgE" />
     <meta
       property="og:description"
       content="스톤헨지 주얼리는 ‘Beautiful Moments’라는 슬로건 아래 클래식하고 우아한 브랜드 이미지를 선보입니다."
     />
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <meta property="og:image" content="http://stonehenge.co.kr/img/logo3.png" />
     <meta property="og:url" content="http://stonehenge.co.kr/" />
 
@@ -72,7 +76,7 @@
       }
       .vs img {
         display: block;
-        width: 80%;
+        width: 100%;
         height: auto;
         padding-top: 5%;
         margin: 0 auto;
@@ -139,6 +143,72 @@
         background-color: #6bbac9;
         color: #fff;
       }
+      .store_tit {
+        margin-top: 10px;
+        text-align: center;
+        font-size: 14px;
+      }
+      .storestep01 {
+        width: 100%;
+      }
+      .sel_white select {
+        margin: 20px 13px;
+        width: 350px;
+        border: 1px solid #8b9ea1;
+        background-color: #dbf2f6c4;
+        height: 30px;
+      }
+      .btn_bouche {
+        margin: 10px 13px;
+        width: 350px;
+        height: 30px;
+        display: block;
+        border: 1px solid #beedf6;
+        text-align: center;
+        line-height: 30px;
+        font-size: 14px;
+        color: #6bbac9;
+      }
+      .btn_bouche:active {
+        background-color: #6bbac9;
+        color: #fff;
+      }
+      .searchImg {
+        width: 200px;
+        height: 30px;
+        margin-left: 75px;
+        border: 1px solid #dfdfdf;
+        background-color: #ebebeb;
+      }
+      .searchImg:active {
+        box-shadow: 0px 3px 5px 5px #cacaca;
+      }
+      .btn1 {
+        width: 80px;
+        height: 30px;
+        background-color: #6bbac9;
+        color: #fff;
+        font-size: 15px;
+        padding: 5px 8px;
+      }
+      .list_con {
+        border-top: 1px solid #ebebeb;
+        border-bottom: 1px solid #ebebeb;
+        margin-top: 40px;
+        padding: 12px;
+      }
+      .sView8 li {
+        font-size: 14px;
+        line-height: 30px;
+      }
+      .s_area {
+        font-weight: bold;
+        font-size: 16px;
+        color: #5e7e85;
+      }
+      .s_address {
+        font-weight: 700;
+      }
     </style>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <script>
@@ -159,8 +229,49 @@
         });
       });
     </script>
+    <link rel="stylesheet" href="pug12.css" />
+    <link rel="stylesheet" href="pug12-1.css" />
   </head>
   <body>
+    <ul class="bottom-particles">
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+    </ul>
     <input type="checkbox" id="ck1" class="n_item" />
     <input type="checkbox" id="ck2" class="n_item" />
     <header class="hd">
@@ -189,7 +300,6 @@
       <ul class="menu">
         <li><a href="login.html" rel="external">LOGIN</a></li>
         <li><a href="join.html" rel="external">JOIN</a></li>
-        <li><a href="contact.html" rel="external">CONTACT</a></li>
       </ul>
     </nav>
     <main class="content">
@@ -199,171 +309,59 @@
           <span class="cur">STORE</span>
         </div>
       </div>
+      <p class="store_tit">스톤헨지의 오프라인 매장 정보를 제공합니다.</p>
       <figure class="vs">
-        <img src="./img/15.jpg" alt="배너이미지" />
+        <img src="./img/34.jpg" alt="배너이미지" />
       </figure>
-      <div class="tb_box">
-        <div class="tab on">버튼1</div>
-        <div class="tab">버튼2</div>
-        <div class="tab">버튼3</div>
+      <div class="storestep01" id="storestep01">
+        <div class="sel_white">
+          <select name="Ssidono" id="sel2">
+            <option value="" selected="">시/도</option
+            ><option value="0101">강원</option
+            ><option value="0102">경기</option
+            ><option value="0103">경남</option
+            ><option value="0104">광주</option
+            ><option value="0105">대구</option
+            ><option value="0106">대전</option
+            ><option value="0107">부산</option
+            ><option value="0108">서울</option
+            ><option value="0109">울산</option
+            ><option value="0110">인천</option
+            ><option value="0111">전북</option
+            ><option value="0112">충남</option
+            ><option value="0113">충북</option
+            ><option value="0114">제주</option
+            ><option value="0115">전남</option>
+          </select>
+        </div>
+        <p class="storeSearch">
+          <a class="btn_bouche">전체 보기</a>
+          <a class="btn_bouche">면세 매장</a>
+          <!-- 면세매장 - 매장 분류(Cont_opt1)에서 '면세점'인 매장만 검색결과에 노출 -->
+          <a class="btn_bouche">해외 매장</a>
+          <!-- 면세매장 - 매장 분류(Cont_opt1)에서 '해외'인 매장만 검색결과에 노출 -->
+        </p>
+
+        <!--검색--><br />
+        <div class="storeSearch2">
+          <input class="searchImg" id="storekey" type="search" />
+          <a class="btn1">검색</a>
+        </div>
       </div>
-      <section class="page on">
-        <h2 class="page_tit">첫 페이지</h2>
-        <ul class="lst1">
-          <li class="col">
-            <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목1</h3>
-              <p class="cate_com">제품에 대한 설명1</p>
-            </a>
-          </li>
-          <li class="col">
-            <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목2</h3>
-              <p class="cate_com">제품에 대한 설명2</p>
-            </a>
-          </li>
-          <li class="col">
-            <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목3</h3>
-              <p class="cate_com">제품에 대한 설명3</p>
-            </a>
-          </li>
-          <li class="col">
-            <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목4</h3>
-              <p class="cate_com">제품에 대한 설명4</p>
-            </a>
-          </li>
-          <li class="col">
-            <a href="">
-              <img src="https://placehold.it/300x300/333" alt="" />
-              <h3 class="cate_tit">제품제목5</h3>
-              <p class="cate_com">제품에 대한 설명5</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="page">
-        <h2 class="page_tit">두 번째 페이지</h2>
-        <ul class="lst1">
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목1</h3>
-              <p class="cate com">제품에 대한 설명1</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목2</h3>
-              <p class="cate com">제품에 대한 설명2</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목3</h3>
-              <p class="cate com">제품에 대한 설명3</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목4</h3>
-              <p class="cate com">제품에 대한 설명4</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목5</h3>
-              <p class="cate com">제품에 대한 설명5</p>
-            </a>
-          </li>
-          <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목6</h3>
-              <p class="cate com">제품에 대한 설명6</p>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="page">
-        <h2 class="page_tit">세 번째 페이지</h2>
-        <ul class="lst1">
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목1</h3>
-                <p class="cate_com"></p>
-              </div>
-            </a>
-          </li>
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목2</h3>
-                <p class="cate_com"></p>
-              </div>
-            </a>
-          </li>
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목3</h3>
-                <p class="cate_com"></p>
-              </div>
-            </a>
-          </li>
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목4</h3>
-                <p class="cate_com"></p>
-              </div>
-            </a>
-          </li>
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목5</h3>
-                <p class="cate_com"></p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="list_con">
+        <div class="list_con_Wrap">
+          <div class="mapWrap" style="width:100%;">
+            <ul class="sView8">
+              <li class="s_area">다카시마야 백화점</li>
+              <li class="s_address">
+                싱가포르 오차드로드 391 타카시마야 백화점 1층
+              </li>
+              <li class="s_tel"><a href="tel:">TEL. </a></li>
+              <li class="btn_map"><a href="">MAP</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="ft">
       <p class="copyright">

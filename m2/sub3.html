@@ -20,7 +20,12 @@
       name="description"
       content="스톤헨지 주얼리는 ‘Beautiful Moments’라는 슬로건 아래 클래식하고 우아한 브랜드 이미지를 선보입니다."
     />
-
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favicon.jpg" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/favicon.jpg" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Brand | STONEHENgE" />
     <meta
@@ -50,6 +55,10 @@
       href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
     />
     <link
+      href="https://fonts.googleapis.com/css?family=Arapey&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     />
@@ -72,14 +81,14 @@
       }
       .vs img {
         display: block;
-        width: 80%;
+        width: 100%;
         height: auto;
-        padding-top: 5%;
+        padding-top: 2%;
+        padding-bottom: 5%;
         margin: 0 auto;
       }
       .page {
         width: 100%;
-        border-top: 5px solid #eee;
         display: none;
       }
       .page.on {
@@ -110,18 +119,21 @@
       }
       .cate_tit {
         text-align: center;
-        line-height: 3;
+        line-height: 1;
+        font-family: "Times italic", "Arapey", "Nanum Barun Gothic",
+          "Noto Sans Korean", sans-serif;
       }
       .cate_com {
-        padding: 1.5rem;
+        padding: 1rem;
         text-align: center;
         padding-bottom: 40px;
+        font-family: "Times italic", "Arapey", "Nanum Barun Gothic",
+          "Noto Sans Korean", sans-serif;
       }
 
       .tb_box {
         clear: both;
-        margin-top: 20px;
-        padding-top: 30px;
+        padding-top: 20px;
       }
       .tb_box .tab {
         float: left;
@@ -138,6 +150,28 @@
       .tb_box .tab.on {
         background-color: #6bbac9;
         color: #fff;
+      }
+      .lst2 {
+        clear: both;
+      }
+      .lst2 li {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        min-height: 300px;
+      }
+      .lst2 li:nth-child(2n + 1) {
+        clear: both;
+      }
+      .lst2 li a {
+        display: block;
+        color: #333;
+        text-align: center;
+      }
+      .lst2 li img {
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
       }
     </style>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
@@ -159,8 +193,49 @@
         });
       });
     </script>
+    <link rel="stylesheet" href="pug12.css" />
+    <link rel="stylesheet" href="pug12-1.css" />
   </head>
   <body>
+    <ul class="bottom-particles">
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+      <li class="bubble1"></li>
+      <li class="bubble"></li>
+    </ul>
     <input type="checkbox" id="ck1" class="n_item" />
     <input type="checkbox" id="ck2" class="n_item" />
     <header class="hd">
@@ -189,187 +264,219 @@
       <ul class="menu">
         <li><a href="login.html" rel="external">LOGIN</a></li>
         <li><a href="join.html" rel="external">JOIN</a></li>
-        <li><a href="contact.html" rel="external">CONTACT</a></li>
       </ul>
     </nav>
     <main class="content">
       <div class="blank">
         <div class="bread">
           <a href="index.html" class="home"><i class="xi-home"></i></a> &gt;
-          <span class="cur">BRAND</span>
+          <span class="cur">ITEM</span>
         </div>
       </div>
-      <figure class="vs">
-        <img src="./img/15.jpg" alt="배너이미지" />
-      </figure>
+
       <div class="tb_box">
-        <div class="tab on">버튼1</div>
-        <div class="tab">버튼2</div>
-        <div class="tab">버튼3</div>
+        <div class="tab on">ALL</div>
+        <div class="tab">NEW</div>
+        <div class="tab">BEST</div>
       </div>
+
       <section class="page on">
-        <h2 class="page_tit">ISSUE</h2>
+        <figure class="vs">
+          <img src="./img/c3.png" alt="배너이미지" />
+          <h3 class="cate_tit">S0252</h3>
+          <p class="cate_com">₩3000,000</p>
+        </figure>
         <ul class="lst2">
           <li class="col2">
-            <a href="">
-              <img src="./img/24.jpg" alt="이슈 이미지" />
-              <h3 class="cate_tit">송혜교</h3>
-              <p class="cate com">tvN남자친구 <br />2019.02</p>
+            <a href="sub4.html">
+              <img src="./img/a1.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">K1424</h3>
+              <p class="cate_com">₩138,000</p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="./img/25.jpg" alt="이슈 이미지" />
-              <h3 class="cate_tit">기은세</h3>
-              <p class="cate com">KBS2 왜그래 풍상씨 <br />2019.02</p>
+            <a href="sub4.html">
+              <img src="./img/a2.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">K1423</h3>
+              <p class="cate_com">₩138,000</p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="./img/26.jpg" alt="이슈 이미지" />
-              <h3 class="cate_tit">화사</h3>
-              <p class="cate com">MBC 라디오스타 <br />2019.02</p>
+            <a href="sub4.html">
+              <img src="./img/a3.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">D0030</h3>
+              <p class="cate_com">₩365,000</p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="./img/27.jpg" alt="이슈 이미지" />
-              <h3 class="cate_tit">김소현</h3>
-              <p class="cate com">
-                인스타그램 <br />
-                2019.02
+            <a href="sub4.html">
+              <img src="./img/a4.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">T1486</h3>
+              <p class="cate_com">
+                ₩358,000
               </p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="./img/28.jpg" alt="이슈 이미지" />
-              <h3 class="cate_tit">유인나</h3>
-              <p class="cate com">MBC 섹션 TV 연예통신 <br />2019.02</p>
+            <a href="sub4.html">
+              <img src="./img/a5.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">T1487</h3>
+              <p class="cate_com">₩298,000</p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="./img/29.jpg" alt="이슈 이미지" />
-              <h3 class="cate_tit">윤세아</h3>
-              <p class="cate com">JTBC SKY 캐슬 <br />2019.02</p>
+            <a href="sub4.html">
+              <img src="./img/a6.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">D0027</h3>
+              <p class="cate_com">₩368,000</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a7.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">D0028</h3>
+              <p class="cate_com">₩395,000</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a8.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">S0261</h3>
+              <p class="cate_com">₩139,000</p>
             </a>
           </li>
         </ul>
       </section>
       <section class="page">
-        <h2 class="page_tit">두 번째 페이지</h2>
-        <ul class="lst1">
+        <figure class="vs">
+          <img src="./img/a10.jpg" alt="배너이미지" />
+          <h3 class="cate_tit">S0252</h3>
+          <p class="cate_com">₩3000,000</p>
+        </figure>
+        <ul class="lst2">
           <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목1</h3>
-              <p class="cate com">제품에 대한 설명1</p>
+            <a href="sub4.html">
+              <img src="./img/a9.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">S0252</h3>
+              <p class="cate_com">₩300,000</p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목2</h3>
-              <p class="cate com">제품에 대한 설명2</p>
+            <a href="sub4.html">
+              <img src="./img/a2.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">K1423</h3>
+              <p class="cate_com">₩138,000</p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목3</h3>
-              <p class="cate com">제품에 대한 설명3</p>
+            <a href="sub4.html">
+              <img src="./img/a3.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">D0030</h3>
+              <p class="cate_com">₩365,000</p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목4</h3>
-              <p class="cate com">제품에 대한 설명4</p>
+            <a href="sub4.html">
+              <img src="./img/a4.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">T1486</h3>
+              <p class="cate_com">
+                ₩358,000
+              </p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목5</h3>
-              <p class="cate com">제품에 대한 설명5</p>
+            <a href="sub4.html">
+              <img src="./img/a5.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">T1487</h3>
+              <p class="cate_com">₩298,000</p>
             </a>
           </li>
           <li class="col2">
-            <a href="">
-              <img src="https://placehold.it/300x300/26d" alt="" />
-              <h3 class="cate_tit">제품제목6</h3>
-              <p class="cate com">제품에 대한 설명6</p>
+            <a href="sub4.html">
+              <img src="./img/a6.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">D0027</h3>
+              <p class="cate_com">₩368,000</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a7.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">D0028</h3>
+              <p class="cate_com">₩395,000</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a8.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">S0261</h3>
+              <p class="cate_com">₩139,000</p>
             </a>
           </li>
         </ul>
       </section>
       <section class="page">
-        <h2 class="page_tit">세 번째 페이지</h2>
-        <ul class="lst1">
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목1</h3>
-                <p class="cate_com"></p>
-              </div>
+        <figure class="vs">
+          <img src="./img/a11.jpg" alt="배너이미지" />
+          <h3 class="cate_tit">P1406</h3>
+          <p class="cate_com">₩368,000</p>
+        </figure>
+        <ul class="lst2">
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a13.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">D0007</h3>
+              <p class="cate_com">₩343,000</p>
             </a>
           </li>
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목2</h3>
-                <p class="cate_com"></p>
-              </div>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a14.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">P1283</h3>
+              <p class="cate_com">₩333,000</p>
             </a>
           </li>
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목3</h3>
-                <p class="cate_com"></p>
-              </div>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a15.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">T1332</h3>
+              <p class="cate_com">₩278,000</p>
             </a>
           </li>
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목4</h3>
-                <p class="cate_com"></p>
-              </div>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a16.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">T1486</h3>
+              <p class="cate_com">
+                ₩358,000
+              </p>
             </a>
           </li>
-          <li class="col3">
-            <a href="">
-              <img
-                src="https://placehold.it/300x300/2c8"
-                alt=""
-                class="thumb"
-              />
-              <div class="tit_box">
-                <h3 class="cate_tit">제품제목5</h3>
-                <p class="cate_com"></p>
-              </div>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/23.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">T1487</h3>
+              <p class="cate_com">₩298,000</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a17.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">B7026</h3>
+              <p class="cate_com">₩208,000</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">S0229</h3>
+              <p class="cate_com">₩240,000</p>
+            </a>
+          </li>
+          <li class="col2">
+            <a href="sub4.html">
+              <img src="./img/a18.png" alt="이슈 이미지" />
+              <h3 class="cate_tit">I0160</h3>
+              <p class="cate_com">₩263,000</p>
             </a>
           </li>
         </ul>
