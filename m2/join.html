@@ -86,9 +86,7 @@
         border-top: 5px solid #eee;
         display: none;
       }
-      .page.on {
-        display: block;
-      }
+      
       .page_tit {
         text-align: center;
         padding-top: 14%;
@@ -124,27 +122,6 @@
         font-size: 14px;
       }
 
-      .tb_box {
-        clear: both;
-        margin-top: 20px;
-        padding-top: 30px;
-      }
-      .tb_box .tab {
-        float: left;
-        width: 33.333333%;
-        line-height: 32px;
-        text-align: center;
-        color: #333;
-        background: #eeeeee;
-        cursor: pointer;
-      }
-      .tb_box .tab:hover {
-        background-color: #cacaca;
-      }
-      .tb_box .tab.on {
-        background-color: #6bbac9;
-        color: #fff;
-      }
       .container {
         padding-top: 56px;
         margin: 0 auto;
@@ -169,6 +146,7 @@
         height: 28px;
         border: 1px solid #cacaca;
         box-shadow: 2px 2px 3px 0px #cecece;
+        padding-left: 4px;
       }
       .inputBox th {
         width: 84px;
@@ -308,24 +286,7 @@
       }
     </style>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script>
-      $(document).ready(function() {
-        $(".tb_box .tab").click(function(index) {
-          var tar = $(this).index();
-          $(".page")
-            .eq(tar)
-            .addClass("on");
-          $(".page")
-            .eq(tar)
-            .siblings()
-            .removeClass("on");
-          $(this).addClass("on");
-          $(this)
-            .siblings()
-            .removeClass("on");
-        });
-      });
-    </script>
+   
   </head>
   <body>
     <input type="checkbox" id="ck1" class="n_item" />
@@ -548,7 +509,7 @@
           </div>
 
           <div class="payBtnWrap">
-            <button class="btn1" type="button">
+            <button id="btn1" class="btn1" type="button">
               회원가입
             </button>
             <button class="btn2" type="button">
@@ -1196,4 +1157,5 @@
       </div>
     </div>
   </body>
+  <script src="./js/join.js"></script>
 </html>
