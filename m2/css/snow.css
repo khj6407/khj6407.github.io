@@ -23,7 +23,7 @@ body {
         height: 1rem;
         bottom: -1rem;
         background-size: cover;
-        background-image: url("./img/snow.png");
+        background-image: url("../img/snow.png");
         border-radius: 50%;
       }
       
