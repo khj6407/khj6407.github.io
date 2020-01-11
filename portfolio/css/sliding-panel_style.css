@@ -18,8 +18,11 @@ body {
   font-family: "PT Sans", sans-serif;
   color: #ffffff;
   background-color: #30336b;
+  -ms-overflow-style: none;
 }
-
+::-webkit-scrollbar {
+  display: none !important;
+}
 a {
   color: #a8ae7e;
   text-decoration: none;
@@ -31,9 +34,10 @@ a {
   width: 100vw;
   height: 100vh;
   position: absolute;
+  z-index: 5;
   clear: both;
   box-sizing: border-box;
-  z-index: 999;
+  overflow: hidden;
 }
 #preloader {
   background: linear-gradient(#d6a4a4, #dae2f8);
@@ -82,7 +86,6 @@ Patterns - reusable parts of our design
   /* replace text with image */
   color: transparent;
   text-indent: 100%;
-  overflow: hidden;
   white-space: nowrap;
 }
 
@@ -923,12 +926,13 @@ footer
   font-size: 16px;
   line-height: 5.5;
 }
+
 /* -------------------------------- 
 
 gallery
 
 -------------------------------- */
-
+/*
 .data_wrap {
   margin-top: 6%;
 }
@@ -966,4 +970,4 @@ gallery
 .tb_btn button.on {
   color: #fff;
   background-color: #333;
-}
+} */

@@ -1,48 +1,48 @@
 jQuery(document).ready(function($) {
-  //loading
+  // loading;
   setInterval(function() {
     $("#preloader").fadeOut();
-  }, 300);
+  }, 3000);
 
   //gallery
-  var txt = 0,
-    dl = 0;
-  $(".tb_btn button").click(function() {
-    var tar = parseInt($(this).attr("item"));
-    $(this).addClass("on");
-    $(this)
-      .siblings()
-      .removeClass("on");
-    $(".lst li").css("display", "none");
-    if (tar == "0" || tar == 0) {
-      $(".lst li").each(function(index) {
-        $(".lst li")
-          .eq(index)
-          .delay(index * dl)
-          .fadeIn();
-      });
-    } else {
-      $(".lst li").css("display", "none");
-      txt = ".item" + tar;
-      if ($(".lst li").filter(txt).length <= 5) {
-        dl = 250;
-      } else {
-        dl = 0;
-      }
-      $(".lst li")
-        .filter(txt)
-        .each(function(index) {
-          $(".lst li")
-            .filter(txt)
-            .eq(index)
-            .delay(index * dl)
-            .fadeIn();
-        });
-      $(".lst li")
-        .not(".item" + tar)
-        .css("display", "none");
-    }
-  });
+  // var txt = 0,
+  //   dl = 0;
+  // $(".tb_btn button").click(function() {
+  //   var tar = parseInt($(this).attr("item"));
+  //   $(this).addClass("on");
+  //   $(this)
+  //     .siblings()
+  //     .removeClass("on");
+  //   $(".lst li").css("display", "none");
+  //   if (tar == "0" || tar == 0) {
+  //     $(".lst li").each(function(index) {
+  //       $(".lst li")
+  //         .eq(index)
+  //         .delay(index * dl)
+  //         .fadeIn();
+  //     });
+  //   } else {
+  //     $(".lst li").css("display", "none");
+  //     txt = ".item" + tar;
+  //     if ($(".lst li").filter(txt).length <= 5) {
+  //       dl = 250;
+  //     } else {
+  //       dl = 0;
+  //     }
+  //     $(".lst li")
+  //       .filter(txt)
+  //       .each(function(index) {
+  //         $(".lst li")
+  //           .filter(txt)
+  //           .eq(index)
+  //           .delay(index * dl)
+  //           .fadeIn();
+  //       });
+  //     $(".lst li")
+  //       .not(".item" + tar)
+  //       .css("display", "none");
+  //   }
+  // });
 
   //cache DOM elements
   var projectsContainer = $(".cd-projects-container"),
