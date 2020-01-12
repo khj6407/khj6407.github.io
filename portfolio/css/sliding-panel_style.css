@@ -431,7 +431,7 @@ Projects
 
 .cd-projects-previews li:nth-of-type(2) a,
 .cd-projects > li:nth-of-type(2) .preview-image {
-  background: #a8ae7e url(../img/img-2.jpg) no-repeat center center;
+  background: #a8ae7e url(../img/img-4.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -443,7 +443,7 @@ Projects
 
 .cd-projects-previews li:nth-of-type(4) a,
 .cd-projects > li:nth-of-type(4) .preview-image {
-  background: #835531 url(../img/img-4.jpg) no-repeat center center;
+  background: #835531 url(../img/img-2.jpg) no-repeat center center;
   background-size: cover;
 }
 
@@ -932,19 +932,20 @@ footer
 gallery
 
 -------------------------------- */
-/*
-.data_wrap {
-  margin-top: 6%;
+
+.gallery {
+  background-image: url("../img/dust_scratches.png");
+  background-size: cover;
 }
+
 .lst {
   width: 1200px;
-  height: 650px;
+  height: 850px;
   margin: 30px auto;
   clear: both;
 }
-.lst li {
+.lst div {
   float: left;
-  border-radius: 51%;
   width: 250px;
   height: 250px;
   margin: 25px;
@@ -970,4 +971,72 @@ gallery
 .tb_btn button.on {
   color: #fff;
   background-color: #333;
-} */
+}
+
+.lst img {
+  width: 260px;
+  height: 250px;
+  overflow: hidden;
+}
+.lst img:hover {
+  box-shadow: 0px 0px 10px #777;
+}
+.lst a:before {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  width: 260px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.685);
+  overflow: hidden;
+  visibility: hidden;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  line-height: 40px;
+  opacity: 0;
+}
+.lst .b1:before {
+  content: "'부여 연꽃 축제'";
+}
+.lst .drone:before {
+  content: "'X-DRONE'";
+}
+.lst .kakao:before {
+  content: "'Kakao Clone'";
+}
+.lst .b4:before {
+  content: "'4LEAF'";
+}
+.lst .c1:before {
+  content: "'문화 체육 관광부'";
+}
+.lst .web04:before {
+  content: "'대한 체육 협회'";
+}
+.lst .send:before {
+  content: "'해운대 모래 축제'";
+}
+.lst .web06:before {
+  content: "'롯데 제과'";
+}
+.lst .todo:before {
+  content: "'ToDo List'";
+}
+.lst .web03:before {
+  content: "'철원 군청'";
+}
+.lst .stone:before {
+  content: "'스톤헨지'";
+}
+.lst .web05:before {
+  content: "'유성 정형외과'";
+}
+
+.lst a:hover::before {
+  visibility: visible;
+  margin-top: 210px;
+  opacity: 1;
+  transition: 1s;
+}

@@ -2,47 +2,47 @@ jQuery(document).ready(function($) {
   // loading;
   setInterval(function() {
     $("#preloader").fadeOut();
-  }, 3000);
+  }, 000);
 
   //gallery
-  // var txt = 0,
-  //   dl = 0;
-  // $(".tb_btn button").click(function() {
-  //   var tar = parseInt($(this).attr("item"));
-  //   $(this).addClass("on");
-  //   $(this)
-  //     .siblings()
-  //     .removeClass("on");
-  //   $(".lst li").css("display", "none");
-  //   if (tar == "0" || tar == 0) {
-  //     $(".lst li").each(function(index) {
-  //       $(".lst li")
-  //         .eq(index)
-  //         .delay(index * dl)
-  //         .fadeIn();
-  //     });
-  //   } else {
-  //     $(".lst li").css("display", "none");
-  //     txt = ".item" + tar;
-  //     if ($(".lst li").filter(txt).length <= 5) {
-  //       dl = 250;
-  //     } else {
-  //       dl = 0;
-  //     }
-  //     $(".lst li")
-  //       .filter(txt)
-  //       .each(function(index) {
-  //         $(".lst li")
-  //           .filter(txt)
-  //           .eq(index)
-  //           .delay(index * dl)
-  //           .fadeIn();
-  //       });
-  //     $(".lst li")
-  //       .not(".item" + tar)
-  //       .css("display", "none");
-  //   }
-  // });
+  var txt = 0,
+    dl = 0;
+  $(".tb_btn button").click(function() {
+    var tar = parseInt($(this).attr("item"));
+    $(this).addClass("on");
+    $(this)
+      .siblings()
+      .removeClass("on");
+    $(".lst div").css("display", "none");
+    if (tar == "0" || tar == 0) {
+      $(".lst div").each(function(index) {
+        $(".lst div")
+          .eq(index)
+          .delay(index * dl)
+          .fadeIn();
+      });
+    } else {
+      $(".lst div").css("display", "none");
+      txt = ".item" + tar;
+      if ($(".lst div").filter(txt).length <= 5) {
+        dl = 250;
+      } else {
+        dl = 0;
+      }
+      $(".lst div")
+        .filter(txt)
+        .each(function(index) {
+          $(".lst div")
+            .filter(txt)
+            .eq(index)
+            .delay(index * dl)
+            .fadeIn();
+        });
+      $(".lst div")
+        .not(".item" + tar)
+        .css("display", "none");
+    }
+  });
 
   //cache DOM elements
   var projectsContainer = $(".cd-projects-container"),
@@ -54,6 +54,8 @@ jQuery(document).ready(function($) {
     //if browser doesn't support CSS transitions...
     transitionsNotSupported = $(".no-csstransitions").length > 0;
 
+  console.log(projectPreviews);
+
   var animating = false,
     //will be used to extract random numbers for projects slide up/slide down effect
     numRandoms = projects.find("li").length,
@@ -62,7 +64,7 @@ jQuery(document).ready(function($) {
   //open project
   projectsPreviewWrapper.on("click", "a", function(event) {
     event.preventDefault();
-    if (animating == false) {
+    if (animating === false) {
       animating = true;
       navigationTrigger.add(projectsContainer).addClass("project-open");
       openProject($(this).parent("li"));
@@ -72,7 +74,7 @@ jQuery(document).ready(function($) {
   navigationTrigger.on("click", function(event) {
     event.preventDefault();
 
-    if (animating == false) {
+    if (animating === false) {
       animating = true;
       if (navigationTrigger.hasClass("project-open")) {
         //close visible project
