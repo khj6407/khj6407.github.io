@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
   // loading;
   setInterval(function() {
     $("#preloader").fadeOut();
-  }, 000);
+  }, 500);
 
   //gallery
   var txt = 0,
@@ -44,17 +44,20 @@ jQuery(document).ready(function($) {
     }
   });
 
+  //footer
+  $(".cd-projects-previews").click(function() {
+    $("#ft").addClass("none");
+  });
+
   //cache DOM elements
   var projectsContainer = $(".cd-projects-container"),
     projectsPreviewWrapper = projectsContainer.find(".cd-projects-previews"),
     projectPreviews = projectsPreviewWrapper.children("li"),
     projects = projectsContainer.find(".cd-projects"),
-    navigationTrigger = $(".cd-nav-trigger"),
+    navigationTrigger = $(".js-back-btn"),
     navigation = $(".cd-primary-nav"),
     //if browser doesn't support CSS transitions...
     transitionsNotSupported = $(".no-csstransitions").length > 0;
-
-  console.log(projectPreviews);
 
   var animating = false,
     //will be used to extract random numbers for projects slide up/slide down effect
@@ -73,6 +76,7 @@ jQuery(document).ready(function($) {
 
   navigationTrigger.on("click", function(event) {
     event.preventDefault();
+    $("#ft").removeClass("none");
 
     if (animating === false) {
       animating = true;

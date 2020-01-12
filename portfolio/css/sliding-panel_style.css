@@ -17,7 +17,7 @@ body {
   font-size: 1.6rem;
   font-family: "PT Sans", sans-serif;
   color: #ffffff;
-  background-color: #30336b;
+  background-color: #f8c291;
   -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
@@ -77,6 +77,15 @@ a {
 
 /*! loading */
 
+.pic {
+  text-align: center;
+}
+
+.pic img {
+  width: 116px;
+  height: 154px;
+  border-radius: 20px;
+}
 /* -------------------------------- 
 
 Patterns - reusable parts of our design
@@ -88,12 +97,39 @@ Patterns - reusable parts of our design
   text-indent: 100%;
   white-space: nowrap;
 }
+/* map */
+#map_canvas {
+  margin: 20px auto;
+}
 
 /* -------------------------------- 
 
 Menu trigger
 
 -------------------------------- */
+.js-back-btn {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50px;
+  background: #000;
+}
+.js-back-btn:hover {
+  -webkit-animation: translate 0.5s infinite linear;
+}
+@-webkit-keyframes translate {
+  from {
+    -webkit-transform: translate(0);
+  }
+  to {
+    -webkit-transform: translateX(-10px);
+  }
+}
 .cd-nav-trigger {
   position: absolute;
   z-index: 4;
@@ -240,6 +276,23 @@ Menu trigger
   }
 }
 
+/* -------------------------------- 
+
+works
+
+-------------------------------- */
+.works {
+  text-align: center;
+  font-size: 18px;
+  line-height: 3;
+}
+.works h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.works .discription {
+  text-indent: 5px;
+}
 /* -------------------------------- 
 
 Projects
@@ -501,7 +554,7 @@ Projects
   transition: transform 0.3s 0.3s;
 }
 .cd-project-title h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 700;
 }
@@ -846,7 +899,7 @@ li.selected .cd-project-title,
 .cd-primary-nav .cd-label {
   position: relative;
   margin: 2.4em 0 2em;
-  color: #dff9fb;
+  color: #ffeadd;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.2rem;
@@ -920,13 +973,16 @@ footer
   z-index: 999;
   line-height: 3;
   width: 100%;
-  height: 80px;
+  height: 70px;
 }
 #ft .copyright a {
   font-size: 16px;
-  line-height: 5.5;
+  line-height: 5.3;
 }
-
+#ft.none {
+  transition: 2s;
+  opacity: 0;
+}
 /* -------------------------------- 
 
 gallery
@@ -957,22 +1013,53 @@ gallery
 }
 .tb_btn button {
   float: left;
-  display: block;
-  width: 120px;
+  display: flex;
+  justify-content: start;
+  width: 260px;
+  margin: 20px;
   height: 40px;
-  margin: 15px;
   line-height: 40px;
   text-align: center;
-  border: 2px solid #333;
-  color: #333;
-  background-color: #fff;
+  color: #555;
+  border-bottom: 2px solid rgb(170, 170, 170);
   cursor: pointer;
 }
 .tb_btn button.on {
-  color: #fff;
-  background-color: #333;
+  color: #3e705d;
+  background-color: transparent;
+  border-bottom: 2px solid #5b927d;
 }
 
+.tb_btn button {
+  float: left;
+}
+.tb_btn button {
+  display: block;
+  background-color: transparent;
+  color: #666;
+  height: 4em;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.tb_btn button span {
+  display: block;
+  transition-duration: 0.5s;
+  line-height: 3;
+}
+.tb_btn button:hover {
+  background: transparent;
+  color: #333;
+  border-bottom: 2.5px solid #079b62;
+}
+.tb_btn button span.top {
+  margin-top: 1em;
+}
+.tb_btn button:hover .top {
+  margin-top: -2.4em;
+}
 .lst img {
   width: 260px;
   height: 250px;
@@ -1039,4 +1126,8 @@ gallery
   margin-top: 210px;
   opacity: 1;
   transition: 1s;
+}
+
+.hide_nav {
+  display: none;
 }
