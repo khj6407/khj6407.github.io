@@ -813,6 +813,18 @@ li.selected .cd-project-title,
 /* Container */
 
 /* Item */
+.designtit,
+.developtit {
+  font-family: "Merriweather", serif;
+  margin-top: 4%;
+  font-size: 30px;
+}
+.design,
+.develop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .progress {
   display: inline-block;
@@ -821,7 +833,7 @@ li.selected .cd-project-title,
   color: #93a2ac;
   font-family: Lato;
   font-weight: 100;
-  margin: 2rem;
+  margin: 2rem 6rem;
 }
 
 .progress:before {
@@ -874,6 +886,7 @@ li.selected .cd-project-title,
 -------------------------------- */
 .btn-1 {
   color: rgb(255, 195, 139) !important;
+  cursor: pointer;
 }
 
 .btn {
@@ -1147,6 +1160,7 @@ gallery
   height: 250px;
   overflow: hidden;
 }
+
 .lst img:hover {
   box-shadow: 0px 0px 10px #777;
 }
