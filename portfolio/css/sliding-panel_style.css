@@ -73,20 +73,24 @@ a {
   overflow: hidden;
 }
 #preloader {
-  background: linear-gradient(#f5d4d4de, #dae2f8ea);
+  background: linear-gradient(#f4e8ff, #e1eaff);
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+.name img {
+  width: 350px;
+  height: 300px;
+}
 .name {
   animation: layerize cubic-bezier(0.4, 0, 0.2, 1) 1200ms 200ms infinite
     alternate;
   opacity: 0;
   width: 100%;
-  color: rgba(75, 2, 97, 0.534);
+  color: rgba(46, 0, 59, 0.534);
   font: italic 500 8rem "Roboto", sans-serif;
   cursor: default;
+  font-weight: bold;
   user-select: none;
   text-align: center;
 }
@@ -94,17 +98,17 @@ a {
   0% {
     opacity: 0;
     transform: translate(0, 0);
-    text-shadow: 0 0 transparent, 0em 0em rgba(225, 225, 225, 0.4),
-      0em 0em rgba(225, 225, 225, 0.3), 0em 0em rgba(225, 225, 225, 0.2),
-      0em 0em rgba(225, 225, 225, 0.1);
+    text-shadow: 0 0 transparent, 0em 0em rgba(121, 121, 121, 0.6),
+      0em 0em rgba(121, 121, 121, 0.5), 0em 0em rgba(121, 121, 121, 0.4),
+      0em 0em rgba(121, 121, 121, 0.3);
   }
   100% {
     opacity: 1;
     transform: translate(0.06666em, 0.06666em);
-    text-shadow: 0 0 transparent, 0.03333em 0.03333em rgba(225, 225, 225, 0.4),
-      0.06666em 0.06666em rgba(225, 225, 225, 0.4),
-      0.09999em 0.09999em rgba(225, 225, 225, 0.2),
-      0.1em 0.1em rgba(225, 225, 225, 0.1);
+    text-shadow: 0 0 transparent, 0.03333em 0.03333em rgba(121, 121, 121, 0.4),
+      0.06666em 0.06666em rgba(121, 121, 121, 0.4),
+      0.09999em 0.09999em rgba(121, 121, 121, 0.2),
+      0.1em 0.1em rgba(121, 121, 121, 0.1);
   }
 }
 
