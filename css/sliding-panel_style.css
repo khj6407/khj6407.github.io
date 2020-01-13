@@ -73,7 +73,7 @@ a {
   overflow: hidden;
 }
 #preloader {
-  background: linear-gradient(#d6a4a4, #dae2f8);
+  background: linear-gradient(#f5d4d4de, #dae2f8ea);
   display: flex;
   align-items: center;
   justify-content: space-between;

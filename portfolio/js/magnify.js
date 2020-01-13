@@ -61,10 +61,10 @@
   };
 
   $(".second").jMagnify({
-    centralEffect: { color: "#f7d794" },
-    lat1Effect: { color: "#686de0" },
-    lat2Effect: { color: "#e056fd" },
-    lat3Effect: { color: "#fff" },
+    centralEffect: { color: "#9180d8" },
+    lat1Effect: { color: "#ebc44d" },
+    lat2Effect: { color: "#70ace8" },
+    lat3Effect: { color: "#312d4e" },
     resetEffect: { color: "#fff" }
   });
 })(jQuery);
