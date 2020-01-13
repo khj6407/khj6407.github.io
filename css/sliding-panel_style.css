@@ -119,6 +119,9 @@ Menu trigger
   border-radius: 50px;
   background: #000;
 }
+i {
+  color: white;
+}
 .js-back-btn:hover {
   -webkit-animation: translate 0.5s infinite linear;
 }
@@ -293,6 +296,7 @@ works
 .works .discription {
   text-indent: 5px;
 }
+
 /* -------------------------------- 
 
 Projects
@@ -788,20 +792,111 @@ li.selected .cd-project-title,
     transform: translateX(-50%) scale(1);
   }
 }
+/* Load animation */
+
+@-webkit-keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+@-moz-keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes load {
+  0% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Container */
+
+/* Item */
+.designtit,
+.developtit {
+  font-family: "Merriweather", serif;
+  margin-top: 4%;
+  font-size: 30px;
+}
+.design,
+.develop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  color: #93a2ac;
+  font-family: Lato;
+  font-weight: 100;
+  margin: 2rem 6rem;
+}
+
+.progress:before {
+  content: attr(data-name);
+  position: absolute;
+  width: 100%;
+  bottom: -2rem;
+  font-weight: 400;
+}
+
+.progress:after {
+  content: attr(data-percent);
+  position: absolute;
+  width: 100%;
+  top: 3.7rem;
+  left: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.progress svg {
+  width: 10rem;
+  height: 10rem;
+}
+
+.progress svg:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+
+.progress svg:nth-child(2) path {
+  fill: none;
+  stroke-width: 25;
+  stroke-dasharray: 629;
+  stroke: rgba(255, 255, 255, 0.9);
+  -webkit-animation: load 10s;
+  -moz-animation: load 10s;
+  -o-animation: load 10s;
+  animation: load 10s;
+}
 /* -------------------------------- 
 
  Navigation
 
 -------------------------------- */
 .btn-1 {
-  color: #fff !important;
+  color: rgb(255, 195, 139) !important;
+  cursor: pointer;
 }
 
 .btn {
   display: block;
   position: relative;
   overflow: hidden;
-  padding: 1.5rem;
+  width: 160px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
   text-decoration: none;
 }
 .btn:before,
@@ -1065,6 +1160,7 @@ gallery
   height: 250px;
   overflow: hidden;
 }
+
 .lst img:hover {
   box-shadow: 0px 0px 10px #777;
 }
