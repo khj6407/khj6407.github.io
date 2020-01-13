@@ -1,4 +1,12 @@
 jQuery(document).ready(function($) {
+  $(document).mousemove(function(e) {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
+    $(".circle")
+      .css("left", mouseX + 15)
+      .css("top", mouseY + 15);
+  });
+
   // loading;
   setInterval(function() {
     $("#preloader").fadeOut();
