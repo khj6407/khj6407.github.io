@@ -139,7 +139,17 @@ Patterns - reusable parts of our design
 #map_canvas {
   margin: 20px auto;
 }
-
+/* about */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 5%;
+}
+.aboutprofile {
+  margin-left: 4%;
+}
 /* -------------------------------- 
 
 Menu trigger
