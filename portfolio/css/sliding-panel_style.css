@@ -81,6 +81,7 @@ a {
 .name img {
   width: 350px;
   height: 300px;
+  transform: skewX(-10deg);
 }
 .name {
   animation: layerize cubic-bezier(0.4, 0, 0.2, 1) 1200ms 200ms infinite
