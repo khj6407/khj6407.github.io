@@ -73,7 +73,7 @@ a {
   overflow: hidden;
 }
 #preloader {
-  background: linear-gradient(#f4e8ff, #e1eaff);
+  background: linear-gradient(#ffede8, #faffe1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,7 +88,7 @@ a {
     alternate;
   opacity: 0;
   width: 100%;
-  color: rgba(46, 0, 59, 0.534);
+  color: #3d3d3dab;
   font: italic 500 8rem "Roboto", sans-serif;
   cursor: default;
   font-weight: bold;
