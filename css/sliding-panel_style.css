@@ -122,7 +122,8 @@ a {
 .pic img {
   width: 116px;
   height: 154px;
-  border-radius: 20px;
+  border-radius: 4px;
+  margin: 4%;
 }
 /* -------------------------------- 
 
@@ -140,16 +141,41 @@ Patterns - reusable parts of our design
   margin: 20px auto;
 }
 /* about */
+h2.title {
+  text-align: center;
+  font-size: 22px;
+}
+.aboutinfo,
+.aboutprofile {
+  margin-left: 6%;
+}
 .about {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
-  margin-top: 5%;
+  margin-top: 2%;
+  line-height: 3;
 }
-.aboutprofile {
-  margin-left: 4%;
+.about2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 2%;
+  line-height: 3;
 }
+.ahtitle {
+  margin-top: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 22px;
+}
+.hobby {
+  margin-left: -5%;
+}
+
 /* -------------------------------- 
 
 Menu trigger
