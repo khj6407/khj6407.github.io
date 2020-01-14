@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
   // loading;
   setInterval(function() {
     $("#preloader").fadeOut();
-  }, 500);
+  }, 2500);
 
   //gallery
   var txt = 0,
