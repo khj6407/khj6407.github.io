@@ -35,7 +35,7 @@ body {
   display: none !important;
 }
 a {
-  color: #575da7;
+  color: #5e63a3;
   text-decoration: none;
 }
 
@@ -99,7 +99,7 @@ a {
     alternate;
   opacity: 0;
   width: 100%;
-  color: #3d3d3dab;
+  color: #be5c00ab;
   font: italic 500 8rem "Roboto", sans-serif;
   cursor: default;
   font-weight: bold;
@@ -131,9 +131,10 @@ a {
 }
 
 .pic img {
-  width: 116px;
-  height: 154px;
-  border-radius: 4px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px #777;
   margin: 4%;
 }
 /* -------------------------------- 
@@ -155,11 +156,21 @@ Patterns - reusable parts of our design
 h2.title {
   text-align: center;
   font-size: 22px;
+  font-weight: bold;
+}
+.fa-female {
+  color: #303030;
+  font-size: 22px;
+  margin: 5px;
+}
+.fa-female:hover {
+  color: #be4bdb;
 }
 .aboutinfo,
 .aboutprofile {
   margin-left: 6%;
 }
+
 .about {
   display: flex;
   justify-content: center;
@@ -182,6 +193,7 @@ h2.title {
   align-items: center;
   justify-content: space-evenly;
   font-size: 22px;
+  font-weight: bold;
 }
 .hobby {
   margin-left: -5%;
@@ -643,12 +655,12 @@ Projects
   transition: transform 0.3s 0.3s;
 }
 .cd-project-title h2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   line-height: 1.5;
   font-weight: 700;
 }
 .cd-project-title p {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-family: "Merriweather", serif;
   font-style: italic;
   line-height: 1.2;
@@ -768,7 +780,7 @@ li.selected .cd-project-title,
   display: none;
   padding: 4em 0;
   background-color: #ffffff;
-  color: #7d7c7b;
+  color: #575757;
 }
 .content-visible .cd-project-info {
   display: block;
@@ -1157,7 +1169,7 @@ footer
 }
 #ft .copyright a {
   font-size: 16px;
-  line-height: 5.3;
+  line-height: 6.3;
 }
 #ft.none {
   transition: 2s;
@@ -1205,9 +1217,11 @@ gallery
   cursor: pointer;
 }
 .tb_btn button.on {
-  color: #3e705d;
+  color: #fff;
   background-color: transparent;
-  border-bottom: 2px solid #5b927d;
+  font-weight: bold;
+  background-color: #2daf7dc5;
+  border-bottom: 2px solid #407460;
 }
 
 .tb_btn button {
@@ -1217,7 +1231,7 @@ gallery
   display: block;
   background-color: transparent;
   color: #666;
-  height: 4em;
+  height: 3em;
   box-sizing: border-box;
   overflow: hidden;
   font-size: 16px;
@@ -1227,16 +1241,14 @@ gallery
 .tb_btn button span {
   display: block;
   transition-duration: 0.5s;
-  line-height: 3;
+  line-height: 2.5;
 }
 .tb_btn button:hover {
-  background: transparent;
-  color: #333;
-  border-bottom: 2.5px solid #079b62;
+  background: #03a064c5;
+  color: #fff;
+  border-bottom: 2.5px solid #14d189;
 }
-.tb_btn button span.top {
-  margin-top: 1em;
-}
+
 .tb_btn button:hover .top {
   margin-top: -2.4em;
 }
