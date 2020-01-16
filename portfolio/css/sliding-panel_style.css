@@ -137,6 +137,12 @@ a {
   box-shadow: 0px 0px 5px #777;
   margin: 4%;
 }
+.pic {
+  transition: transform 600ms ease-in-out 0s;
+}
+.pic:hover {
+  transform: rotateY(360deg);
+}
 /* -------------------------------- 
 
 Patterns - reusable parts of our design
@@ -156,7 +162,10 @@ Patterns - reusable parts of our design
 h2.title {
   text-align: center;
   font-size: 22px;
+  cursor: pointer;
   font-weight: bold;
+  background-color: #8cc5cf80;
+  padding: 10px;
 }
 .fa-female {
   color: #303030;
@@ -194,6 +203,12 @@ h2.title {
   justify-content: space-evenly;
   font-size: 22px;
   font-weight: bold;
+  cursor: pointer;
+  background-color: #8cc5cf80;
+  padding: 10px;
+}
+.ahtitle:hover {
+  color: #045235;
 }
 .hobby {
   margin-left: -5%;
@@ -922,7 +937,14 @@ li.selected .cd-project-title,
   justify-content: center;
   align-items: center;
 }
-
+.gtitle {
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #f8e8c580;
+  padding: 6px;
+}
 .progress {
   display: inline-block;
   position: relative;
