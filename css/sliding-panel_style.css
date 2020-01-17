@@ -156,7 +156,7 @@ Patterns - reusable parts of our design
 }
 /* map */
 #map_canvas {
-  margin: 20px auto;
+  margin: 100px auto;
 }
 /* about */
 h2.title {
@@ -1378,8 +1378,8 @@ h2.contact {
   font-size: 20px;
   color: #777;
   margin-top: 1%;
-  margin-left: 12%;
+  margin-left: 15%;
 }
 .contact-info-con .sns {
-  margin-left: 18%;
+  margin-left: 20%;
 }
