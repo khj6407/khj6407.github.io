@@ -99,7 +99,7 @@ a {
     alternate;
   opacity: 0;
   width: 100%;
-  color: #be5c00ab;
+  color: #ffc116ab;
   font: italic 500 8rem "Roboto", sans-serif;
   cursor: default;
   font-weight: bold;
@@ -1345,4 +1345,41 @@ gallery
 
 .hide_nav {
   display: none;
+}
+
+/* contact */
+h2.contact {
+  font-size: 32px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  margin: 4%;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 24px;
+}
+.contact-info i.fa-mobile-alt,
+.contact-info i.fa-instagram {
+  color: #fab074;
+  font-size: 30px;
+  text-align: center;
+  margin: 3% 30%;
+}
+.contact-info i.fa-envelope {
+  color: #fab074;
+  font-size: 30px;
+  text-align: center;
+  margin: 4% 18%;
+}
+.contact-info-con div {
+  display: block;
+  float: left;
+  font-size: 20px;
+  color: #777;
+  margin-top: 1%;
+  margin-left: 12%;
+}
+.contact-info-con .sns {
+  margin-left: 18%;
 }
