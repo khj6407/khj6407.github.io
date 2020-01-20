@@ -1356,30 +1356,42 @@ h2.contact {
 }
 .contact-info {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   font-size: 24px;
 }
-.contact-info i.fa-mobile-alt,
-.contact-info i.fa-instagram {
-  color: #fab074;
-  font-size: 30px;
+.contact-info div {
   text-align: center;
-  margin: 3% 30%;
 }
+.contact-info i.fa-mobile-alt,
+.contact-info i.fa-instagram,
 .contact-info i.fa-envelope {
   color: #fab074;
   font-size: 30px;
-  text-align: center;
-  margin: 4% 18%;
+  width: 200px;
+}
+
+.contact-info-con {
+  display: flex;
+  justify-content: center;
 }
 .contact-info-con div {
-  display: block;
-  float: left;
   font-size: 20px;
   color: #777;
+  text-align: center;
   margin-top: 1%;
-  margin-left: 15%;
 }
-.contact-info-con .sns {
-  margin-left: 20%;
+.email,
+.mobile,
+.sns {
+  width: 265px;
+}
+
+.email_info,
+.mobile_info,
+.sns_info {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  width: 270px;
+  color: #777;
 }
