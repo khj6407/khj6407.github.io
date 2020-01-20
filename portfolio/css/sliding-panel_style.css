@@ -154,10 +154,7 @@ Patterns - reusable parts of our design
   text-indent: 100%;
   white-space: nowrap;
 }
-/* map */
-#map_canvas {
-  margin: 100px auto;
-}
+
 /* about */
 h2.title {
   text-align: center;
@@ -1395,4 +1392,20 @@ h2.contact {
   font-size: 18px;
   width: 270px;
   color: #777;
+}
+/* map */
+.add {
+  text-align: center;
+  font-size: 24px;
+}
+.add i {
+  color: #fab074;
+  font-size: 30px;
+}
+
+.kakaomap {
+  margin: 100px auto;
+}
+#map {
+  margin: 20px auto;
 }
