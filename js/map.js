@@ -15,11 +15,3 @@
 //   });
 // }
 // google.maps.event.addDomListener(window, "load", initialize);
-
-var container = document.getElementById("map");
-var options = {
-  center: new kakao.maps.LatLng(36.357993, 127.329648),
-  level: 3
-};
-
-var map = new kakao.maps.Map(container, options);

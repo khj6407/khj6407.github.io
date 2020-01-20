@@ -21,11 +21,11 @@
       href="./img/logo1.png"
     />
     <link rel="shortcut icon" href="./img/favicon.png" />
-    <link
+    <!-- <link
       href="http://fonts.googleapis.com/css?family=PT+Sans:400,700|Merriweather:400italic,400"
       rel="stylesheet"
       type="text/css"
-    />
+    /> -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -726,7 +726,7 @@
             <div class="js-back-btn">
               <i class="fas fa-chevron-left"></i>
             </div>
-            <div class="cd-project-title " onload="initialize()">
+            <div class="cd-project-title ">
               <h2 class="second">CONTACT</h2>
               <p>My information</p>
             </div>
@@ -815,10 +815,20 @@
     <script src="./js/jquery-2.1.1.js"></script>
     <script src="./js/sliding-panel_main.js"></script>
     <script src="./js/menu.js"></script>
-    <script src="./js/map.js"></script>
+    <!-- <script src="./js/map.js"></script> -->
     <script src="./js/magnify.js"></script>
 
     <!-- Resource jQuery -->
   </body>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=664e297061b5aa168e843c42ff863e6b"></script>
-</html>
+  <script>
+    var container = document.getElementById("map");
+    var options = {
+      center: new kakao.maps.LatLng(36.357993, 127.329648),
+      level: 3
+    };
+
+    var map = new kakao.maps.Map(container, options);
+  </script>
+
+  </html>
