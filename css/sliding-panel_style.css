@@ -161,7 +161,7 @@ h2.title {
   font-size: 22px;
   cursor: pointer;
   font-weight: bold;
-  background-color: #8cc5cf80;
+  background-color: #cdf0f780;
   padding: 10px;
 }
 .fa-female {
@@ -224,6 +224,7 @@ Menu trigger
   width: 40px;
   height: 40px;
   line-height: 40px;
+  z-index: 10;
   text-align: center;
   border-radius: 50px;
   background: #000;
@@ -618,6 +619,7 @@ Projects
   width: 100%;
   top: calc(50% - 20px);
   left: 0;
+  cursor: pointer;
   color: #ffffff;
   -webkit-transform: translateY(-37.5vh);
   -moz-transform: translateY(-37.5vh);
