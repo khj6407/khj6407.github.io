@@ -201,7 +201,7 @@ h2.title {
   font-size: 22px;
   font-weight: bold;
   cursor: pointer;
-  background-color: #8cc5cf80;
+  background-color: #cdf0f780;
   padding: 10px;
 }
 .ahtitle:hover {
@@ -1344,6 +1344,30 @@ gallery
 
 .hide_nav {
   display: none;
+}
+.portPdf i {
+  transition: transform 600ms ease-in-out 0s;
+}
+.portPdf i:hover {
+  transform: rotateY(360deg);
+}
+.portpdf {
+  text-align: center;
+  color: #1c332a;
+  font-size: 28px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.portPdf i {
+  color: #407460;
+  font-size: 30px;
+  margin-left: 10px;
 }
 
 /* contact */
