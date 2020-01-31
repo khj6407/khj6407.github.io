@@ -1409,7 +1409,10 @@ h2.contact {
 .sns {
   width: 265px;
 }
-
+.email a,
+.mobile a {
+  color: #575757;
+}
 .email_info,
 .mobile_info,
 .sns_info {
