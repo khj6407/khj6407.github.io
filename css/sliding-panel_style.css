@@ -89,11 +89,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.name img {
-  width: 350px;
-  height: 300px;
-  transform: skewX(-10deg);
-}
+
 .name {
   animation: layerize cubic-bezier(0.4, 0, 0.2, 1) 1200ms 200ms infinite
     alternate;
@@ -1437,4 +1433,144 @@ h2.contact {
 }
 #map {
   margin: 20px auto;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .name {
+    animation: layerize cubic-bezier(0.4, 0, 0.2, 1) 1200ms 200ms infinite
+      alternate;
+    opacity: 0;
+    width: 100%;
+    color: #ffc116ab;
+    font: italic 500 5rem "Roboto", sans-serif;
+    cursor: default;
+    font-weight: bold;
+    user-select: none;
+    text-align: center;
+  }
+  .cd-project-title h2 {
+    font-size: 2.5rem;
+    line-height: 0.5;
+    font-weight: 700;
+  }
+  /* about */
+  .pic img {
+    width: 100px;
+    height: 100px;
+  }
+  h2.title {
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #cdf0f780;
+    padding: 6px;
+  }
+  .fa-female {
+    color: #303030;
+    font-size: 18px;
+    margin: 5px;
+  }
+
+  .about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 9px;
+    margin-top: 2%;
+    line-height: 3;
+  }
+  .aboutinfo,
+  .aboutprofile {
+    margin-left: 11%;
+    width: 190px;
+  }
+  .about2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1px;
+    margin-top: 2%;
+    line-height: 3;
+  }
+  .ahtitle {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #cdf0f780;
+    padding: 10px;
+  }
+
+  .hobby {
+    margin-left: -5%;
+  }
+  .works {
+    font-size: 15px;
+  }
+  .works h2 {
+    font-size: 17px;
+  }
+  .gtitle {
+    padding: 0;
+  }
+  .designtit,
+  .developtit {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .design,
+  .develop {
+    display: block;
+  }
+  div#chart12 {
+    display: block;
+  }
+  svg.Nwagon_radar {
+    width: 450px;
+  }
+  h2.contact {
+    font-size: 25px;
+    margin: 10%;
+  }
+  .contact-info {
+    font-size: 16px;
+  }
+  .contact-info i.fa-mobile-alt,
+  .contact-info i.fa-instagram,
+  .contact-info i.fa-envelope {
+    color: #fab074;
+    font-size: 23px;
+    width: 140px;
+    height: 40px;
+  }
+  .contact-info-con div {
+    font-size: 11px;
+    color: #777;
+    text-align: center;
+    margin-top: 4%;
+  }
+  #ft .copyright,
+  #ft .copyright a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    z-index: 999;
+    line-height: 3;
+    width: 50px;
+    font-size: 14px;
+    height: 400px;
+    writing-mode: vertical-lr;
+  }
+  #ft .copyright a {
+    font-size: 14px;
+    line-height: 6.3;
+  }
+  #ft.none {
+    transition: 2s;
+    opacity: 0;
+  }
 }
