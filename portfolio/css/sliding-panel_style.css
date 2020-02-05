@@ -1488,7 +1488,7 @@ h2.contact {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1px;
+    font-size: 9px;
     margin-top: 2%;
     line-height: 3;
   }
@@ -1532,11 +1532,11 @@ h2.contact {
     width: 450px;
   }
   h2.contact {
-    font-size: 25px;
+    font-size: 20px;
     margin: 10%;
   }
   .contact-info {
-    font-size: 16px;
+    font-size: 14px;
   }
   .contact-info i.fa-mobile-alt,
   .contact-info i.fa-instagram,
@@ -1547,11 +1547,12 @@ h2.contact {
     height: 40px;
   }
   .contact-info-con div {
-    font-size: 11px;
+    font-size: 10px;
     color: #777;
     text-align: center;
     margin-top: 4%;
   }
+
   #ft .copyright,
   #ft .copyright a {
     position: absolute;
